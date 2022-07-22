@@ -1,12 +1,13 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import Image from 'next/image'
+
 const Welcome = () => {
     return (
         <section data-aos='fade-up' id="home" className="">
             <div className='container-fluid d-none d-lg-block'>
                 <Row>
-                    <Col lg={6} md={1} className="pt-7">
+                    <Col lg={6} md={1} className="pt-7 welcome-col-1-bg welcome-col-1">
                         <div className='d-flex pe-2'>
                             <h1 className='display-3'><span className="text-secondary">Fin</span>ance is our root<br /><span className="text-secondary">Tech</span>nology is our weapon</h1>
                         </div>
@@ -20,10 +21,6 @@ const Welcome = () => {
                             <input type="text" className="form-control newsletter py-2" placeholder="Enter your email for newsletter" aria-label="Recipient's username" aria-describedby="button-addon2" />
                             <button className="btn btn-secondary text-white px-5" type="button" id="button-addon2">Register</button>
                         </div>
-                        <div className="WelcomeBear">
-                            <Image src="/Bear.png" width="258" height="280"
-                                style={{}} />
-                        </div>
                     </Col>
                     <Col lg={6} md={1} className="d-flex welcome-col-2">
                         <div className='caret'></div>
@@ -33,7 +30,7 @@ const Welcome = () => {
                     </Col>
                 </Row>
             </div>
-            <div className='d-xs-block d-lg-none'>
+            <div className='d-xs-block d-lg-none welcome-col-1-bg'>
                 <div className='d-flex'>
                     <h1 className='display-1'><span className="text-secondary">Fin</span>ance is our root<br /><span className="text-secondary">Tech</span>nology is our weapon</h1>
                 </div>

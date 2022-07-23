@@ -1,0 +1,92 @@
+.upcoming-col {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.upcoming-col-2-bg {
+    background: url("../public/Group\ 12762.svg") no-repeat;
+    background-position-x: 46vw;
+    background-position-y: 75vh;
+    background-size: 14rem 14rem;
+}
+
+.inverted-border-radius {
+    position: relative;
+    border-radius: 0 0 0 0;
+}
+
+.inverted-border-radius::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
+    right: -25px;
+    height: 50px;
+    width: 26px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 -50px 0 0 #ceae62;
+}
+
+.inverted-border-radius-2 {
+    position: relative;
+    border-radius: 0 0 0 0;
+}
+
+.inverted-border-radius-2::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
+    right: -25px;
+    height: 50px;
+    width: 26px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 -50px 0 0 #bfcbde;
+}
+
+.inverted-border-radius-3 {
+    position: relative;
+    border-radius: 0 0 0 0;
+}
+
+.inverted-border-radius-3::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
+    right: -25px;
+    height: 50px;
+    width: 26px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 -50px 0 0 #728185;
+}
+
+/* Responsive */
+
+/* Responsive mobile */
+@media only screen and (max-width: 600px) {}
+
+/* Responsive tablet */
+@media only screen and (min-width: 600px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Responsive desktop */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {}
+
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {}
+
+@media only screen and (min-width: 2560px) {}

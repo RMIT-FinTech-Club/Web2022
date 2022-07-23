@@ -28,7 +28,7 @@
     width: 26px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    box-shadow: 0 -50px 0 0 #ceae62;
+    box-shadow: 0 -50px 0 0 #AD9252;
 }
 
 .inverted-border-radius-2 {
@@ -46,7 +46,7 @@
     width: 26px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    box-shadow: 0 -50px 0 0 #bfcbde;
+    box-shadow: 0 -50px 0 0 #a4afbf;
 }
 
 .inverted-border-radius-3 {
@@ -64,7 +64,7 @@
     width: 26px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    box-shadow: 0 -50px 0 0 #728185;
+    box-shadow: 0 -50px 0 0 #677578;
 }
 
 /* Responsive */

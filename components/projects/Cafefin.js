@@ -25,14 +25,14 @@ const Cafefin = () => {
                     <div className="mt-5 d-flex justify-content-between">
                         <div
                             onClick={() => open(READ_NOW_URL)}
-                            className="btn btn-secondary text-white px-5 py-3 fs-4 text-uppercase action-btn"
+                            className="btn btn-secondary text-white px-4 py-3 fs-4 text-uppercase action-btn"
                             type="button"
                         >
                             Read now
                         </div>
                         <div
                             onClick={() => open(SEE_ALL_URL)}
-                            className="btn btn-primary text-white px-5 py-3 fs-4 text-uppercase action-btn"
+                            className="btn btn-primary text-white px-4 py-3 fs-4 text-uppercase action-btn"
                             type="button"
                         >
                             See all

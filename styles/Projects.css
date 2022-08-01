@@ -1,14 +1,14 @@
-.action-btn{
+.action-btn {
     width: 300px;
     border-radius: 20px;
 }
 
-.project-img{
+.project-img {
     border-radius: 20px;
 }
-/* Responsive mobile */
-@media only screen and (max-width: 600px) {
-    .action-btn{
+@media only screen and (max-width: 800px) {
+    .action-btn {
         margin: 0px 5px;
+        width: 200px;
     }
 }

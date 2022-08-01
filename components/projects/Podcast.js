@@ -17,7 +17,7 @@ const Podcast = () => {
         if (ep < n - 1) setEp((ep) => ep + 1);
     };
     return (
-        <div className="d-block container-fluid py-4 px-lg-4 mb-5">
+        <div data-aos="fade-up" className="d-block container-fluid py-4 px-lg-4 mb-5">
             <h1 className="display-2 text-center text-lg-start">FinTech Podcast</h1>
             <div className="mt-4">
                 <iframe

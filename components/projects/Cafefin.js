@@ -7,7 +7,7 @@ const Cafefin = () => {
         window.open(url, "_blank");
     };
     return (
-        <div className="d-block container-fluid py-4 px-lg-4 mb-5">
+        <div data-aos="fade-up" className="d-block container-fluid py-4 px-lg-4 mb-5">
             <h1 className="display-2 text-center text-lg-start">CafeFin</h1>
             <Row className="mt-4 h-auto">
                 <Col lg={4} md={12}>

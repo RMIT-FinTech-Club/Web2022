@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Header from "../../components/Header";
-import Magazine from "../../components/Magazine";
+import Magazine from "../../components/projects/Magazine";
+import Cafefin from "../../components/projects/Cafefin";
+import Podcast from "../../components/projects/Podcast";
 
 export default function Projects() {
     return (
@@ -13,7 +15,8 @@ export default function Projects() {
             <Header />
             <div className="container pt-5">
                 <Magazine />
-                <Magazine />
+                <Cafefin />
+                <Podcast />
             </div>
         </>
     );

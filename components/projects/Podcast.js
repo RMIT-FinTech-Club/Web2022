@@ -1,14 +1,8 @@
 import { useState } from "react";
+import podcasts from "../../data/projects/podcasts.json";
 
 const Podcast = () => {
-    const urls = [
-        "https://open.spotify.com/embed/episode/4g7tVZk3MJQNGZU14rMFzu?utm_source=generator",
-        "https://open.spotify.com/embed/episode/2szc79vEhkESgNAMYInAf9?utm_source=generator",
-        "https://open.spotify.com/embed/episode/2C0eiVMeNYIex5OEPQXhLm?utm_source=generator",
-        "https://open.spotify.com/embed/episode/3BKByrghO9kybXv0VmDErL?utm_source=generator",
-        "https://open.spotify.com/embed/episode/5601Q6WjtD2VWSxwy7PJT3?utm_source=generator",
-    ];
-    const n = urls.length;
+    const n = podcasts.length;
     const [ep, setEp] = useState(n - 1);
     const prev = () => {
         if (ep > 0) setEp((ep) => ep - 1);
@@ -21,15 +15,14 @@ const Podcast = () => {
             <h1 className="display-2 text-center text-lg-start">FinTech Podcast</h1>
             <div className="mt-4">
                 <iframe
-                    id="spotify-podcast"
-                    src={urls[ep]}
+                    src={podcasts[ep]}
                     width="100%"
-                    height="232"
-                    frameborder="0"
-                    allowfullscreen=""
+                    height="250"
+                    frameBorder="0"
+                    allowFullScreen=""
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 ></iframe>
-                <div className="mt-3 d-flex justify-content-between">
+                <div className="mt-2 d-flex justify-content-between">
                     <div
                         onClick={prev}
                         className={`

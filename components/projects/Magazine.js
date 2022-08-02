@@ -1,6 +1,8 @@
 import { Col, Image, Row } from "react-bootstrap";
-import { magazine } from "../../data/projects.json";
+import projects from "../../data/projects.json";
 const Magazine = () => {
+    const magazine = projects.magazine;
+
     const open = (url) => {
         window.open(url, "_blank");
     };

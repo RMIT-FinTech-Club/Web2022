@@ -1,6 +1,8 @@
 import { Col, Image, Row } from "react-bootstrap";
-import { cafefin } from "../../data/projects.json";
+import projects from "../../data/projects.json";
 const Cafefin = () => {
+    const cafefin = projects.cafefin;
+    
     const open = (url) => {
         window.open(url, "_blank");
     };

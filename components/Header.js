@@ -27,13 +27,13 @@ const Header = () => {
                         className="justify-content-center pt-0"
                     >
                         <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0" style={{ alignItems: "center" }}>
-                            <Nav.Link href="#home" className="nav-link px-3">
+                            <Nav.Link href="/" className="nav-link px-3">
                                 Home
                             </Nav.Link>
-                            <Nav.Link href="#about" className="nav-link px-3 ">
+                            <Nav.Link href="/about" className="nav-link px-3 ">
                                 About us
                             </Nav.Link>
-                            <Nav.Link href="#projects" className="nav-link px-3">
+                            <Nav.Link href="/projects" className="nav-link px-3">
                                 Projects
                             </Nav.Link>
                             <Navbar.Brand
@@ -48,10 +48,10 @@ const Header = () => {
                                     className="mt-2"
                                 />
                             </Navbar.Brand>
-                            <Nav.Link href="#events" className="nav-link px-3">
+                            <Nav.Link href="/events" className="nav-link px-3">
                                 Events
                             </Nav.Link>
-                            <Nav.Link href="#blog" className="nav-link px-3">
+                            <Nav.Link href="/blog" className="nav-link px-3">
                                 Blog
                             </Nav.Link>
                             <Nav.Link href="#more" className="nav-link ps-3">
@@ -94,22 +94,22 @@ const Header = () => {
                             className="justify-content-center pt-0"
                         >
                             <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0" style={{ alignItems: "center" }}>
-                                <Nav.Link href="#home" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link href="/" className="nav-link" onClick={toggleOffCanvas}>
                                     Home
                                 </Nav.Link>
-                                <Nav.Link href="#about" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link href="/about" className="nav-link" onClick={toggleOffCanvas}>
                                     About us
                                 </Nav.Link>
-                                <Nav.Link href="#projects" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link href="/projects" className="nav-link" onClick={toggleOffCanvas}>
                                     Projects
                                 </Nav.Link>
-                                <Nav.Link href="#events" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link href="/events" className="nav-link" onClick={toggleOffCanvas}>
                                     Events
                                 </Nav.Link>
-                                <Nav.Link href="#blog" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link href="/blog" className="nav-link" onClick={toggleOffCanvas}>
                                     Blog
                                 </Nav.Link>
-                                <Nav.Link href="#more" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link href="/more" className="nav-link" onClick={toggleOffCanvas}>
                                     More
                                 </Nav.Link>
                             </Nav>

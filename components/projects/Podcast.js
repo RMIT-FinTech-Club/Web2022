@@ -1,5 +1,5 @@
 import { useState } from "react";
-import podcasts from "../../data/projects/podcasts.json";
+import { podcasts } from "../../data/projects.json";
 
 const Podcast = () => {
     const n = podcasts.length;
@@ -26,7 +26,7 @@ const Podcast = () => {
                     <div
                         onClick={prev}
                         className={`
-                            btn btn-secondary text-white px-4 py-3 fs-4 text-uppercase action-btn 
+                            btn btn-secondary text-white px-4 py-3 fs-5 fs-lg-4 text-uppercase action-btn 
                             ${ep === 0 ? "invisible" : ""}`}
                         type="button"
                     >
@@ -35,7 +35,7 @@ const Podcast = () => {
                     <div
                         onClick={next}
                         className={`
-                            btn btn-primary text-white px-4 py-3 fs-4 text-uppercase action-btn 
+                            btn btn-primary text-white px-4 py-3 fs-5 fs-lg-4 text-uppercase action-btn 
                             ${ep === n - 1 ? "invisible" : ""}`}
                         type="button"
                     >

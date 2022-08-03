@@ -37,7 +37,7 @@ html, body {
   color: #fff !important;
   font-weight: 600;
 }
-.nav-link:active, .nav-link:focus, .nav-link:hover {
+.nav-link:active, .nav-link.active, .nav-link:focus, .nav-link:hover {
   color: #dbb968 !important;
 }
 

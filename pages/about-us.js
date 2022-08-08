@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
-import Departments from "../components/Departments";
-import Executives from "../components/Executives";
-import MemorableMoments from "../components/MemorableMoments";
+import Departments from "../components/about-us/Departments";
+import Members from "../components/about-us/AllMembers";
 
 export default function AboutUs() {
   return (
@@ -17,8 +16,7 @@ export default function AboutUs() {
       <div className="container">
         <h1 className="text-center display-3 pt-5">About Us</h1>
         <Departments />
-        <Executives />
-        <MemorableMoments />
+        <Members />
       </div>
     </>
   );

@@ -16,7 +16,7 @@ const Header = () => {
     };
     return (
         <>
-            <div className="d-none d-md-flex bg-primary justify-center align-items-center sticky-top">
+            <div className="d-none d-md-flex bg-primary justify-center align-items-center">
                 <div className="px-0 mx-0" style={{ flex: "0 0 auto", width: "90%" }}>
                     <Navbar
                         collapseOnSelect

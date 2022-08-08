@@ -3,7 +3,7 @@ import { Row, Col, Container, Button } from "react-bootstrap";
 
 const MemorableMoments = () => {
   return (
-    <section className="" data-aos="fade-up" id="departments">
+    <section className="" data-aos="fade-up" id="memorable-moments">
       <div className="container-fluid">
         <p>MemorableMoments</p>
       </div>

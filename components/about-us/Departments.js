@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import departmentsInfo from "../data/departments.json";
+import departmentsInfo from "../../data/departments.json";
 
 const DEPARTMENT_IMAGES = {
   business: "/Business.png",
@@ -18,7 +18,7 @@ const Departments = () => {
     <section className="" data-aos="fade-up" id="departments">
       <div className="container-fluid d-lg-block">
         <Row>
-          <Col lg={6} md={1} className="department-info">
+          <Col lg={6} md={1} className="department-info department-row">
             {/* <div className="department-info"> */}
             <div>
               <div className="department-title-container">

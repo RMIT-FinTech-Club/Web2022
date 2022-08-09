@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Our first Club Day",
+        "date":"xx/2020" ,
+        "image":"/FirstClubDay.png" ,
+        "description":"Ipsum voluptua kasd takimata sed et gubergren voluptua lorem voluptua. Diam sed rebum tempor voluptua eos erat diam invidunt, accusam." 
+    },
+    {
+        "title": "Orientation Day",
+        "date":"01/2021" ,
+        "image":"/OrientationDay.png" ,
+        "description":"Ipsum voluptua kasd takimata sed et gubergren voluptua lorem voluptua. Diam sed rebum tempor voluptua eos erat diam invidunt, accusam." 
+    }
+]

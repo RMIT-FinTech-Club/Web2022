@@ -1,13 +1,37 @@
 import React from "react";
-import { Row, Col, Container, Button } from "react-bootstrap";
+
+import momentsData from '../data/moments.json';
+
+const MomentItem = (props) => {
+  const {title, date, image, description} = props;
+  return (
+    <div className="moment-item">
+      <h3 className="moment-item-title">{title}</h3>
+      <div className="moment-item-circle"/>
+      <p className="moment-item-date">{date}</p>
+      <div className="moment-item-divider"/>
+      <img className="moment-item-img" src={image} alt={title} />
+      <p>{description}</p>
+    </div>
+  )
+}
 
 const MemorableMoments = () => {
   return (
-    <section className="" data-aos="fade-up" id="memorable-moments">
-      <div className="container-fluid">
-        <p>MemorableMoments</p>
+    <div className="" data-aos="fade-up" id="memorable-moments">
+      <div className="moments-container my-4 mx-auto">
+        {momentsData.map(moment => {
+          return (
+            <MomentItem 
+              title={moment.title} 
+              date={moment.date}
+              image={moment.image}
+              description={moment.description}
+            />
+          )
+        })}
       </div>
-    </section>
+    </div>
   );
 };
 

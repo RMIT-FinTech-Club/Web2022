@@ -67,7 +67,7 @@ const EventsPage = () => {
                     </Col>
                 </div>
 
-                <div className="mt-5">
+                <div className="mt-5" data-aos="fade-up">
                     <h2 className="text-ft-blue font-mont text-uppercase fw-semibold">{currentmonth}</h2>
                     {current_month_events &&
                         current_month_events.map((e, i) => {
@@ -83,7 +83,7 @@ const EventsPage = () => {
                         })}
                 </div>
 
-                <div className="mt-5">
+                <div className="mt-5" data-aos="fade-up">
                     <h2 className="text-ft-blue font-mont text-uppercase fw-semibold">{nextmonth}</h2>
                     {next_month_events &&
                         next_month_events.map((e, i) => {
@@ -114,7 +114,7 @@ const EventsPage = () => {
                     </Col>
                 </div>
 
-                <div className="mt-5">
+                <div className="mt-5" data-aos="fade-up">
                     <h2 className="text-ft-blue font-mont text-uppercase fw-semibold">{pastmonth}</h2>
                     {past_2month_events &&
                         past_2month_events.map((e, i) => {
@@ -130,7 +130,7 @@ const EventsPage = () => {
                         })}
                 </div>
 
-                <div className="mt-5">
+                <div className="mt-5" data-aos="fade-up">
                     <h2 className="text-ft-blue font-mont text-uppercase fw-semibold">{past2month}</h2>
                     {past_month_events &&
                         past_month_events.map((e, i) => {

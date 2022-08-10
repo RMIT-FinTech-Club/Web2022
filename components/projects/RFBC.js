@@ -2,7 +2,7 @@ import { Image, Col, Row } from "react-bootstrap";
 import projects from "../../data/projects.json";
 const RFBC = () => {
     const rfbc = projects.rfbc;
-    
+
     const open = (url) => {
         window.open(url, "_blank");
     };

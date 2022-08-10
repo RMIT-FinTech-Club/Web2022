@@ -21,16 +21,22 @@ const EventsPage = () => {
     events.forEach((e) => {
         if (moment(e.date).format("MMMM") === pastmonth) {
             past_month_events.push(e);
+            past_month_events.sort((a,b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf())
+
         }
         if (moment(e.date).format("MMMM") === past2month) {
             past_2month_events.push(e);
+            past_2month_events.sort((a,b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf())
+            
         }
         if (moment(e.date).format("MMMM") === currentmonth) {
             current_month_events.push(e);
+            current_month_events.sort((a,b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf())
+
         }
         if (moment(e.date).format("MMMM") === nextmonth) {
             next_month_events.push(e);
-            console.log(next_month_events);
+            next_month_events.sort((a,b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf())
         }
     });
 

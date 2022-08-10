@@ -9,6 +9,10 @@ html, body {
   background-size: 14rem 14rem;
 }
 
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Header and navbar  */
 
 .ft-logo {
@@ -118,6 +122,14 @@ section {
 
 .pe-8 {
   padding-right: 9rem;
+}
+
+.mt-6 {
+  margin-top: 5rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
 }
 
 /* shadows and effect */

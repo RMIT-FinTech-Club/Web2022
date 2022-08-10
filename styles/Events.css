@@ -1,8 +1,12 @@
 .single-event-block {
     border-radius: 10px;
     background: #FFFFFF;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
     height: 188px;
+}
+
+.events-date-radius {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .events-text-date {

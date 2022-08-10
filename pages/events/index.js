@@ -55,13 +55,13 @@ const EventsPage = () => {
                  * 
                 */}
                 <div className='mt-5 d-flex justify-content-center'>
-                    <Col lg={3}>
+                    <Col sm={12} lg={3}>
                         <div className='display-4 text-ft-yellow'>
                             Upcoming Events
                         </div>
                     </Col>
 
-                    <Col lg={9} className="d-flex flex-col align-items-center">
+                    <Col lg={9} className="d-none d-md-flex flex-col align-items-center">
                         <div className="border-ft-yellow w-100 border-3 border-bottom"></div>
                     </Col>
                 </div>
@@ -105,7 +105,7 @@ const EventsPage = () => {
                         </div>
                     </Col>
 
-                    <Col lg={9} className="d-flex flex-col align-items-center">
+                    <Col lg={9} className="d-none d-md-flex flex-col align-items-center">
                         <div className="border-ft-yellow w-100 border-3 border-bottom"></div>
                     </Col>
                 </div>

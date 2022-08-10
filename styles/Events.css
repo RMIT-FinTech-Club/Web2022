@@ -1,0 +1,28 @@
+.single-event-block {
+    border-radius: 10px;
+    background: #FFFFFF;
+    height: 188px;
+}
+
+.events-date-radius {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.events-text-date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.events-text-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Responsive mobile */
+@media only screen and (max-width: 600px) {
+    .single-event-block {
+        height: 300px;
+    }    
+  }

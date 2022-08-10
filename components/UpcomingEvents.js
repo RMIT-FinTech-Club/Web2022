@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import Image from "next/image";
+import finTechEvents from "../data/home.json";
 
 const UpcomingEvents = () => {
     return (
@@ -48,6 +49,45 @@ const UpcomingEvents = () => {
 
                         <div className="d-flex justify-content-end">
                             <div className="border w-50 border-ft-gray"></div>
+                        </div>
+
+                        <div className="d-flex justify-content-end">
+                            <Row className="event-container">
+                                <Col lg={8} className="event-col">
+                                    <div className="event-holder" id="first-event">
+                                        <a href="/">
+                                            <img src={finTechEvents[0].image} alt="event-image" />
+                                        </a>
+                                    </div>
+                                </Col>
+                                <Col lg={4} className="event-col">
+                                    <Row className="event-row">
+                                        <Col lg={12} className="event-col">
+                                            <div className="event-holder" id="second-event">
+                                                <a href="/">
+                                                    <img src={finTechEvents[1].image} alt="event-image" />
+                                                </a>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                    <Row className="event-row">
+                                        <Col lg={6} className="event-col">
+                                            <div className="event-holder" id="second-third">
+                                                <a href="/">
+                                                    <img src={finTechEvents[2].image} alt="event-image" />
+                                                </a>
+                                            </div>
+                                        </Col>
+                                        <Col lg={6} className="event-col">
+                                            <div className="event-holder" id="second-forth">
+                                                <a href="/">
+                                                    <img src={finTechEvents[3].image} alt="event-image" />
+                                                </a>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </Row>
                         </div>
                     </Col>
                 </Row>

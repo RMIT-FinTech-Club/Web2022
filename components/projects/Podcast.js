@@ -3,7 +3,7 @@ import projects from "../../data/projects.json";
 
 const Podcast = () => {
     const podcasts = projects.podcasts;
-    
+
     const n = podcasts.length;
     const [ep, setEp] = useState(n - 1);
     const prev = () => {

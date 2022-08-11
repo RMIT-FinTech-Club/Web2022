@@ -1,12 +1,33 @@
-html, body {
+html,
+body {
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  background: #faf9f6;
+  position: relative;
+}
+
+body>div::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background: #faf9f6 url("../public/Group\ 1277.svg");
   background-repeat: no-repeat;
   background-position-x: -4rem;
   background-position-y: top;
   background-size: 14rem 14rem;
+}
+
+body>div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  position: absolute;
+  background: url("../public/Group\ 12762.svg") no-repeat;
+  background-position: right -5rem bottom -2rem;
+  background-size: 16rem 16rem;
 }
 
 /* Header and navbar  */
@@ -21,6 +42,7 @@ html, body {
   height: 70px;
   width: 75px;
 }
+
 .mobile-header {
   display: inline-flex;
 }
@@ -37,7 +59,10 @@ html, body {
   color: #fff !important;
   font-weight: 600;
 }
-.nav-link:active, .nav-link:focus, .nav-link:hover {
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
   color: #dbb968 !important;
 }
 
@@ -51,7 +76,8 @@ button.btn {
   border-radius: 50px;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
   box-shadow: none;
 }
@@ -75,7 +101,11 @@ input.newsletter::placeholder {
 
 /* Typography */
 
-.display-1, .display-2, .display-3, .display-4, .display-5 {
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
   color: #2B305E;
   line-height: 1;
 }
@@ -131,7 +161,9 @@ section {
 
 /* Responsive mobile */
 @media only screen and (max-width: 600px) {
-  html, body {
+
+  html,
+  body {
     background: #faf9f6 url("../public/Group\ 1277.svg");
     background-repeat: no-repeat;
     background-position-x: -2.5rem;
@@ -141,27 +173,20 @@ section {
 }
 
 /* Responsive tablet */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-}
+@media only screen and (min-width: 600px) and (max-width: 767px) {}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
 
 /* Responsive desktop */
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 
-@media only screen and (min-width: 1200px) and (max-width: 1299px) {
-}
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {}
 
-@media only screen and (min-width: 1300px) and (max-width: 1399px) {
-}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {}
 
 
-@media only screen and (min-width: 1400px) and (max-width: 1599px) {
-}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {}
 
-@media only screen and (min-width: 2560px) {
-}
+@media only screen and (min-width: 2560px) {}

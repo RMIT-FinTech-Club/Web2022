@@ -7,7 +7,7 @@ const Welcome = () => {
         <section data-aos="fade-up" id="home" className="">
             <div className="container-fluid d-none d-lg-block">
                 <Row>
-                    <Col lg={6} md={1} className="pt-7 welcome-col-1-bg welcome-col-1">
+                    <Col lg={6} md={1} className="pt-7 welcome-col-1-bg welcome-col-1 p-0">
                         <div className="d-flex pe-2">
                             <h1 className="display-3">
                                 <span className="text-secondary">Fin</span>ance is our root

@@ -5,13 +5,6 @@
     justify-content: center;
 }
 
-.upcoming-col-2-bg {
-    background: url("../public/Group\ 12762.svg") no-repeat;
-    background-position-x: 46vw;
-    background-position-y: 75vh;
-    background-size: 14rem 14rem;
-}
-
 .inverted-border-radius {
     position: relative;
     border-radius: 0 0 0 0;

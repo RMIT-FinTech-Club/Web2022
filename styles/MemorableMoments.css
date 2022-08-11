@@ -31,7 +31,7 @@
 }
 
 .moment-item-title {
-    text-align: center;
+    text-align: right;
     margin-bottom: 0;
     grid-row: 1 / span 2;
 }
@@ -52,4 +52,5 @@
 
 .moment-item-img {
     width: 100%;
+    border-radius: 25px;
 }

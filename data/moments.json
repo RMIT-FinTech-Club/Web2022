@@ -1,14 +1,26 @@
 [
     {
         "title": "Our first Club Day",
-        "date":"xx/2020" ,
-        "image":"/FirstClubDay.png" ,
-        "description":"Ipsum voluptua kasd takimata sed et gubergren voluptua lorem voluptua. Diam sed rebum tempor voluptua eos erat diam invidunt, accusam." 
+        "date":"07/2020" ,
+        "image":"/first-club-day.png" ,
+        "description":"Club Day is coming back to town after a difficult time because of the covid pandemic." 
     },
     {
-        "title": "Orientation Day",
+        "title": "FinTech Club 2nd Generation",
         "date":"01/2021" ,
-        "image":"/OrientationDay.png" ,
-        "description":"Ipsum voluptua kasd takimata sed et gubergren voluptua lorem voluptua. Diam sed rebum tempor voluptua eos erat diam invidunt, accusam." 
+        "image":"/sec-gen.jpeg" ,
+        "description":"Outstanding members who have led the FinTech club to a great development." 
+    },
+    {
+        "title": "Best academic club of the semester",
+        "date":"09/2021" ,
+        "image":"/best-club.jpeg" ,
+        "description":"We are extremely honored to be the second-time winner of RMIT Best Club of Semester in the category ”Academic & Study Skills” 2021! Everyone's hard work paid off !!!" 
+    },
+    {
+        "title": "Gen 3 executive management board",
+        "date":"01/2022" ,
+        "image":"/gen-3.png" ,
+        "description":"The journey of finding FinTech's executive board for generation 3 with about 20 participants from different departments, as our club has found young and very talented leaders for a new term." 
     }
 ]

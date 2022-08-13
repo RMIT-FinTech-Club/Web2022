@@ -15,34 +15,44 @@ const Departments = () => {
     setDepartment(newDepartment);
   };
   return (
-    <section className="" data-aos="fade-up" id="departments">
+    <div className="" data-aos="fade-up" id="departments">
       <div className="container-fluid d-lg-block">
-        <Row>
-          <Col lg={6} md={1} className="department-info department-row">
-            {/* <div className="department-info"> */}
-            <div>
-              <div className="department-title-container">
-                <div className="department-title-line" />
-                <h2 className="fs-2 department-title text-secondary">
-                  Our Departments
-                </h2>
-                <div className="department-title-line" />
-              </div>
+        <Row className="department-container">
+          <div className="department-title-container-mobile ">
+            <div className="department-title-line" />
+            <h2 className="fs-2 department-title text-secondary">
+              Our Departments
+            </h2>
+            <div className="department-title-line" />
+          </div>
+          <Col lg={6} md={1} className="department-info">
+            <div className="department-info-text">
+              <div>
+                <div className="department-title-container">
+                  <div className="department-title-line" />
+                  <h2 className="fs-2 department-title text-secondary">
+                    Our Departments
+                  </h2>
+                  <div className="department-title-line" />
+                </div>
 
-              <h2 className="display-4 my-xxl-4">
-                {departmentsInfo[department].name}
-              </h2>
-              <p>{departmentsInfo[department].description}</p>
+                <h2 className="display-4 my-xxl-4">
+                  {departmentsInfo[department].name}
+                </h2>
+                <p>{departmentsInfo[department].description}</p>
+              </div>
+              <div>
+                <button className="mx-0 btn btn-secondary text-white p-2">
+                  Join us
+                </button>
+              </div>
             </div>
 
             <div>
-              <button className="mx-0 btn btn-secondary text-white join-us-button p-2">
-                Join us
-              </button>
               <div className="department-select mt-xxl-5">
                 {Object.entries(departmentsInfo).map(([title, info]) => {
                   const borderClass = `department-item-border-${info.index}`;
-                  const paddingClass = title === department ? "py-5" : "py-4";
+                  const paddingClass = title === department ? "selected-department" : "unselected-department";
                   let backgroundClass;
                   switch (info.index % 4) {
                     case 1:
@@ -76,7 +86,7 @@ const Departments = () => {
             </div>
             {/* </div> */}
           </Col>
-          <Col lg={6} md={1}>
+          <Col lg={6} md={1} className="department-image-container">
             <img
               className="department-image"
               src={DEPARTMENT_IMAGES[department]}
@@ -84,7 +94,7 @@ const Departments = () => {
           </Col>
         </Row>
       </div>
-    </section>
+    </div>
   );
 };
 

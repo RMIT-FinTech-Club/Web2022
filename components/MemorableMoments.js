@@ -11,7 +11,7 @@ const MomentItem = (props) => {
       <p className="moment-item-date">{date}</p>
       <div className="moment-item-divider"/>
       <img className="moment-item-img" src={image} alt={title} />
-      <p>{description}</p>
+      <p className="moment-item-description">{description}</p>
     </div>
   )
 }

@@ -54,3 +54,25 @@
     width: 100%;
     border-radius: 25px;
 }
+
+@media only screen and (max-width: 600px) {
+    .moments-container {
+        width: 100%;
+    }
+    .moment-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .moment-item-circle, .moment-item-divider {
+        display: none;
+    }
+
+    .moment-item-title {
+        text-align: center;
+    }
+
+    .moment-item-description {
+        text-align: center;
+    }
+}

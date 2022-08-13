@@ -11,7 +11,7 @@
 .welcome-col-1-bg {
     background: url("../public/Bear.png") no-repeat;
     background-position-x: 33rem;
-    background-position-y: 75vh;
+    background-position-y: 95%;
     background-size: 14rem 14rem;
 }
 
@@ -29,6 +29,16 @@
     position: relative;
     box-shadow: -20px 4px 25px rgba(0, 0, 0, 0.25);
 }
+
+.welcome-col-2::before {
+    content: "";
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    border-left: solid 20px #C3C3C3;
+    position: relative;
+    left: 0;
+}
+
 
 /* Responsive Welcome */
 

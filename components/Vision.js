@@ -3,9 +3,9 @@ import { Row, Col, Container } from "react-bootstrap";
 import Image from "next/image";
 const Vision = () => {
     return (
-        <section className="" data-aos="fade-up" id="vision-mission">
-            <div className="container-fluid">
-                <Row className="vimi-container">
+        <section className="section-custom-height" data-aos="fade-up" id="vision-mission">
+            <div className="container-fluid h-100">
+                <Row className="h-100">
                     <Col className="vimi-col bg-secondary" id="vision-col">
                         <div className="vimi-body">
                             <h1 className="display-1 text-center">Vision</h1>

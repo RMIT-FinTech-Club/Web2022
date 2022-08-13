@@ -9,23 +9,22 @@ body {
 
 body>div::before {
   content: "";
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50vh;
   position: absolute;
-  background: #faf9f6 url("../public/Group\ 1277.svg");
-  background-repeat: no-repeat;
-  background-position-x: -4rem;
-  background-position-y: top;
+  background: #faf9f6 url("../public/Group\ 1277.svg") no-repeat;
+  background-position: -4rem top;
   background-size: 14rem 14rem;
 }
 
 body>div::after {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 50vh;
+  z-index: -1;
   transform: translateY(-100%);
   position: absolute;
-  background: url("../public/Group\ 12762.svg") no-repeat;
+  background: #faf9f6 url("../public/Group\ 12762.svg") no-repeat;
   background-position: right -5rem bottom -2rem;
   background-size: 16rem 16rem;
 }
@@ -115,6 +114,13 @@ input.newsletter::placeholder {
 
 section {
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.section-custom-height {
+  height: 800px;
   justify-content: center;
   align-items: center;
   display: flex;

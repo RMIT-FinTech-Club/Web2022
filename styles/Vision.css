@@ -1,9 +1,5 @@
-.vimi-container {
-    height: 100vh;
-}
-
 .vimi-col {
-    height: 700px;
+    height: 85%;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 35px 20px -22px;
 }
 

@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const Welcome = () => {
     return (
-        <section data-aos="fade-up" id="home" className="">
-            <div className="container-fluid d-none d-lg-block">
-                <Row>
-                    <Col lg={6} md={1} className="pt-7 welcome-col-1-bg welcome-col-1 p-0">
+        <section data-aos="fade-up" id="home" className="section-custom-height">
+            <div className="container-fluid d-none d-lg-block h-100">
+                <Row className="h-100">
+                    <Col lg={6} md={1} className="pt-7 welcome-col-1-bg welcome-col-1 p-0 h-100">
                         <div className="d-flex pe-2">
                             <h1 className="display-3">
                                 <span className="text-secondary">Fin</span>ance is our root
@@ -19,7 +19,7 @@ const Welcome = () => {
                             <p className="text-secondary fs-3">RMIT VIETNAM FINTECH CLUB</p>
                         </div>
                         <div className="d-flex justify-content-center pe-5">
-                            <p className="">
+                            <p className="" style={{ textAlign: "justify" }}>
                                 RMIT Vietnam FinTech Club was launched with the goal to inspire, educate and increase
                                 the exposure of people to FinTech and digital disruption via our workshops, meetups,
                                 page contents, conferences, bootcamps, and events.
@@ -38,12 +38,10 @@ const Welcome = () => {
                             </button>
                         </div>
                     </Col>
-                    <Col lg={6} md={1} className="d-flex welcome-col-2">
-                        <div className="caret"></div>
-                        <div className="d-flex align-items-center justify-content-center">
+                    <Col lg={6} md={1} className="d-flex welcome-col-2 h-100 p-0">
+                        <div className="d-flex align-items-center justify-content-center w-100 h-75">
                             <iframe
-                                width="560"
-                                height="315"
+                                className="w-75 h-50"
                                 src="https://www.youtube.com/embed/uHVWItKFs3M?controls=0&amp;autoplay=1"
                                 title="YouTube video player"
                                 frameBorder="0"

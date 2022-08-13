@@ -24,7 +24,7 @@ const Header = () => {
                         variant="dark"
                         sticky="top"
                         bg="primary"
-                        className="justify-content-center pt-0 w-100"
+                        className="justify-content-center p-0 w-100"
                     >
                         <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0 w-100 justify-content-center">
                             <div className="d-flex align-items-center w-25 flex-row-reverse">
@@ -38,7 +38,7 @@ const Header = () => {
                                     Projects
                                 </Nav.Link>
                             </div>
-                            <div className="align-items-center ">
+                            <div className="align-items-center pb-2">
                                 <Navbar.Brand
                                     href="/"
                                     className="px-2 text-dark text-decoration-none pt-0 pb-0 mx-3 d-flex justify-content-center ft-logo"

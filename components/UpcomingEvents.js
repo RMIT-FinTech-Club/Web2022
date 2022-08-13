@@ -5,10 +5,10 @@ import finTechEvents from "../data/home.json";
 
 const UpcomingEvents = () => {
     return (
-        <section className="" data-aos="fade-up" id="upcoming">
-            <div className="container-fluid">
-                <Row>
-                    <Col lg={4} className="upcoming-col p-0">
+        <section className="section-custom-height" data-aos="fade-up" id="upcoming">
+            <div className="container-fluid h-100">
+                <Row className="h-100">
+                    <Col lg={4} className="upcoming-col p-0 h-100">
                         <div
                             className="bg-secondary ft-shadow-1 py-4 h-100 inverted-border-radius"
                             data-aos="slide-up"
@@ -38,7 +38,7 @@ const UpcomingEvents = () => {
                         </div>
                     </Col>
 
-                    <Col lg={8} className="upcoming-col upcoming-col-2-bg p-0">
+                    <Col lg={8} className="upcoming-col upcoming-col-2-bg p-0 h-100">
                         <div className="d-flex justify-content-end">
                             <h1 className="display-1 text-right">Upcoming Events</h1>
                         </div>

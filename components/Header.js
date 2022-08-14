@@ -5,6 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -14,6 +15,9 @@ const Header = () => {
     const toggleOffCanvas = () => {
         setShow((show) => !show);
     };
+
+    const router = useRouter();
+
     return (
         <>
             <div className="d-none d-md-flex bg-primary justify-center align-items-center">
@@ -27,13 +31,17 @@ const Header = () => {
                         className="justify-content-center pt-0"
                     >
                         <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0" style={{ alignItems: "center" }}>
-                            <Nav.Link href="#home" className="nav-link px-3">
+                            <Nav.Link href="/" className="nav-link px-3" active={router.pathname == "/"}>
                                 Home
                             </Nav.Link>
-                            <Nav.Link href="#about" className="nav-link px-3 ">
+                            <Nav.Link href="/about" className="nav-link px-3" active={router.pathname == "/about"}>
                                 About us
                             </Nav.Link>
-                            <Nav.Link href="#projects" className="nav-link px-3">
+                            <Nav.Link
+                                href="/projects"
+                                className="nav-link px-3"
+                                active={router.pathname == "/projects"}
+                            >
                                 Projects
                             </Nav.Link>
                             <Navbar.Brand
@@ -48,14 +56,14 @@ const Header = () => {
                                     className="mt-2"
                                 />
                             </Navbar.Brand>
-                            <Nav.Link href="#events" className="nav-link px-3">
+                            <Nav.Link href="/events" className="nav-link px-3" active={router.pathname == "/events"}>
                                 Events
                             </Nav.Link>
-                            <Nav.Link href="#blog" className="nav-link px-3">
+                            <Nav.Link href="/blog" className="nav-link px-3" active={router.pathname == "/blog"}>
                                 Blog
                             </Nav.Link>
-                            <Nav.Link href="#more" className="nav-link ps-3">
-                                More
+                            <Nav.Link href="/moments" className="nav-link ps-3" active={router.pathname == "/moments"}>
+                                Moments
                             </Nav.Link>
                         </Nav>
                     </Navbar>
@@ -94,23 +102,53 @@ const Header = () => {
                             className="justify-content-center pt-0"
                         >
                             <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0" style={{ alignItems: "center" }}>
-                                <Nav.Link href="#home" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link
+                                    href="/"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/"}
+                                >
                                     Home
                                 </Nav.Link>
-                                <Nav.Link href="#about" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link
+                                    href="/about"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/about"}
+                                >
                                     About us
                                 </Nav.Link>
-                                <Nav.Link href="#projects" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link
+                                    href="/projects"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/projects"}
+                                >
                                     Projects
                                 </Nav.Link>
-                                <Nav.Link href="#events" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link
+                                    href="/events"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/events"}
+                                >
                                     Events
                                 </Nav.Link>
-                                <Nav.Link href="#blog" className="nav-link" onClick={toggleOffCanvas}>
+                                <Nav.Link
+                                    href="/blog"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/blog"}
+                                >
                                     Blog
                                 </Nav.Link>
-                                <Nav.Link href="#more" className="nav-link" onClick={toggleOffCanvas}>
-                                    More
+                                <Nav.Link
+                                    href="/moments"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/moments"}
+                                >
+                                    Moments
                                 </Nav.Link>
                             </Nav>
                         </Navbar>

@@ -34,7 +34,7 @@ const Header = () => {
                             <Nav.Link href="/" className="nav-link px-3" active={router.pathname == "/"}>
                                 Home
                             </Nav.Link>
-                            <Nav.Link href="/about" className="nav-link px-3" active={router.pathname == "/about"}>
+                            <Nav.Link href="/about-us" className="nav-link px-3" active={router.pathname == "/about"}>
                                 About us
                             </Nav.Link>
                             <Nav.Link

@@ -5,10 +5,27 @@
   padding-left: 0 !important;
 }
 
-.department-info-text {
+.department-info-container {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.department-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.department-info-description {
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.join-us-button {
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 1.5rem;
 }
 
 .department-title-container {
@@ -321,7 +338,7 @@
     gap: 25px;
   }
 
-  .department-info-text {
+  .department-info-container {
     justify-content: flex-start
   }
 

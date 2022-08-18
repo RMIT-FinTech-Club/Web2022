@@ -26,8 +26,8 @@ const Departments = () => {
             <div className="department-title-line" />
           </div>
           <Col lg={6} md={1} className="department-info">
-            <div className="department-info-text">
-              <div>
+            <div className="department-info-container">
+              <div className="department-info-text mb-2">
                 <div className="department-title-container">
                   <div className="department-title-line" />
                   <h2 className="fs-2 department-title text-secondary">
@@ -36,16 +36,12 @@ const Departments = () => {
                   <div className="department-title-line" />
                 </div>
 
-                <h2 className="display-4 my-xxl-4">
+                <h2 className="display-4" style={{marginBottom: 0}}>
                   {departmentsInfo[department].name}
                 </h2>
-                <p>{departmentsInfo[department].description}</p>
+                <p className="department-info-description">{departmentsInfo[department].description}</p>
               </div>
-              <div>
-                <button className="mx-0 btn btn-secondary text-white p-2">
-                  Join us
-                </button>
-              </div>
+              <div className="join-us-button py-2 px-5 text-white bg-secondary">Join Us</div>
             </div>
 
             <div>

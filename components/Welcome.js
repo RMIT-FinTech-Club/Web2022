@@ -10,9 +10,9 @@ const Welcome = () => {
                     <Col lg={6} md={1} className="pt-7 welcome-col-1-bg welcome-col-1 p-0 h-100">
                         <div className="d-flex pe-2">
                             <h1 className="display-3">
-                                <span className="text-secondary">Fin</span>ance is our root
+                                <span className="text-secondary display-3">Fin</span>ance is our root
                                 <br />
-                                <span className="text-secondary">Tech</span>nology is our weapon
+                                <span className="text-secondary display-3">Tech</span>nology is our weapon
                             </h1>
                         </div>
                         <div className="d-flex">

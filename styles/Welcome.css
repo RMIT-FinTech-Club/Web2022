@@ -5,14 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 10;
-}
-
-.welcome-col-1-bg {
-    background: url("../public/Bear.png") no-repeat;
-    background-position-x: 33rem;
-    background-position-y: 95%;
-    background-size: 14rem 14rem;
+    position: relative;
 }
 
 .welcome-col-1-mobile {
@@ -35,8 +28,21 @@
     border-top: solid 20px transparent;
     border-bottom: solid 20px transparent;
     border-left: solid 20px #C3C3C3;
-    position: relative;
+    position: absolute;
     left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.welcome-col-1::before {
+    content: "";
+    position: absolute;
+    width: 12rem;
+    aspect-ratio: 1;
+    right: -4.3rem;
+    bottom: 5%;
+    background: transparent url("../public/Bear.png") no-repeat;
+    background-size: 14rem;
 }
 
 
@@ -73,72 +79,14 @@
 
 /* Responsive desktop */
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .caret {
-        display: none;
-    }
-
-    .welcome-col-1-bg {
-        background: url("../public/Bear.png") no-repeat;
-        background-position-x: 22rem;
-        background-position-y: 75vh;
-        background-size: 14rem 14rem;
-    }
-}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 
-@media only screen and (min-width: 1200px) and (max-width: 1299px) {
-    .caret {
-        border-top: solid 20px transparent;
-        border-bottom: solid 20px transparent;
-        border-left: solid 20px #C3C3C3;
-        position: relative;
-        left: 10px;
-    }
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {}
 
-    .welcome-col-1-bg {
-        background: url("../public/Bear.png") no-repeat;
-        background-position-x: 28rem;
-        background-position-y: 75vh;
-        background-size: 14rem 14rem;
-    }
-}
-
-@media only screen and (min-width: 1300px) and (max-width: 1399px) {
-    .caret {
-        border-top: solid 20px transparent;
-        border-bottom: solid 20px transparent;
-        border-left: solid 20px #C3C3C3;
-        position: relative;
-        left: 10px;
-    }
-
-    .welcome-col-1-bg {
-        background: url("../public/Bear.png") no-repeat;
-        background-position-x: 28rem;
-        background-position-y: 75vh;
-        background-size: 14rem 14rem;
-    }
-}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {}
 
 
-@media only screen and (min-width: 1400px) and (max-width: 1599px) {
-    .caret {
-        border-top: solid 20px transparent;
-        border-bottom: solid 20px transparent;
-        border-left: solid 20px #C3C3C3;
-        position: relative;
-        right: 36px;
-    }
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {}
 
-}
-
-@media only screen and (min-width: 2560px) {
-    .caret {
-        border-top: solid 20px transparent;
-        border-bottom: solid 20px transparent;
-        border-left: solid 20px #C3C3C3;
-        position: relative;
-        right: 36px;
-    }
-}
+@media only screen and (min-width: 2560px) {}

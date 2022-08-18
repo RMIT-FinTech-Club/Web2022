@@ -43,7 +43,7 @@ const Header = () => {
                                     href="/"
                                     className="px-2 text-dark text-decoration-none pt-0 pb-0 mx-3 d-flex justify-content-center ft-logo"
                                 >
-                                    <img src="/club-logo.png" width={57} height={48} className="mt-2" />
+                                    <img src="/club-logo.png" className="mt-2" />
                                 </Navbar.Brand>
                             </div>
                             <div className="d-flex align-items-center w-25">
@@ -81,7 +81,7 @@ const Header = () => {
             <div className="d-xs-block d-md-none">
                 <Offcanvas show={show} onHide={handleClose} placement="end" className="bg-primary">
                     <Offcanvas.Header>
-                        <Offcanvas.Title></Offcanvas.Title>
+                        <Offcanvas.Title>Menu</Offcanvas.Title>
                         <i className="bi bi-x-circle fs-1 text-white" onClick={handleClose}></i>
                     </Offcanvas.Header>
                     <Offcanvas.Body>

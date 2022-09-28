@@ -15,7 +15,7 @@ export default function Home() {
                 <meta property="og:description" content="Website of RMIT FinTech Club" />
                 <meta property="description" content="Website of RMIT FinTech Club" />
                 <meta property="og:url" content="rmitsgsfintechclub.com" />
-                <meta property="og:image" content="https://imgur.com/L3Zymh0" />
+                <meta property="og:image" content="https://i.imgur.com/L3Zymh0.jpeg" />
                 <link rel="icon" href="./icon.png" type="image/x-icon" />
                 <link rel="apple-touch-icon" href="./icon.png" />
             </Head>

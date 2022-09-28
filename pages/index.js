@@ -9,14 +9,13 @@ export default function Home() {
         <>
             <Head>
                 <title>RMIT Fintech Club</title>
-                <link rel="icon" href="/icon.png" />
                 <meta property="og:title" content="RMIT FinTech Club" />
                 <meta property="og:type" content="website" />
                 <meta property="og:description" content="Website of RMIT FinTech Club" />
                 <meta property="description" content="Website of RMIT FinTech Club" />
                 <meta property="og:url" content="rmitsgsfintechclub.com" />
                 <meta property="og:image" content="https://i.imgur.com/L3Zymh0.jpeg" />
-                <link rel="icon" href="./icon.png" type="image/x-icon" />
+                <link rel="icon" href="./icon.png" />
                 <link rel="apple-touch-icon" href="./icon.png" />
             </Head>
             <Header />

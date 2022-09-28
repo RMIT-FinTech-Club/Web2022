@@ -1,11 +1,11 @@
 {
     "magazine": {
-        "readNowUrl": "https://www.facebook.com/rmitfintechclub/photos/a.287261069527134/417750456478194",
-        "seeAllUrl": "https://www.facebook.com/rmitfintechclub/photos/a.287261069527134/"
+        "readNowUrl": "https://issuu.com/rmitfintechclub/docs/_fintech_magazine_august_edition",
+        "seeAllUrl": "https://issuu.com/rmitfintechclub"
     },
     "cafefin": {
         "readNowUrl": "https://www.facebook.com/rmitfintechclub/photos/a.287261069527134/417750456478194",
-        "seeAllUrl": "https://www.facebook.com/rmitfintechclub/photos/a.287261069527134/"
+        "seeallurl": "https://www.facebook.com/media/set/?set=a.287261069527134&type=3"
     },
 
     "podcasts": [

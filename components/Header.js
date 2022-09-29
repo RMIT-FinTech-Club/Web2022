@@ -20,8 +20,8 @@ const Header = () => {
 
     return (
         <>
-            <div className="d-none d-md-flex bg-primary justify-center align-items-center sticky-top">
-                <div className="px-0 mx-0" style={{ flex: "0 0 auto", width: "90%" }}>
+            <div className="d-none d-md-flex bg-primary justify-center align-items-center">
+                <div className="px-0 mx-0" style={{ flex: "0 0 auto", width: "100%" }}>
                     <Navbar
                         collapseOnSelect
                         expand="md"
@@ -34,7 +34,7 @@ const Header = () => {
                             <Nav.Link href="/" className="nav-link px-3" active={router.pathname == "/"}>
                                 Home
                             </Nav.Link>
-                            <Nav.Link href="/about" className="nav-link px-3" active={router.pathname == "/about"}>
+                            <Nav.Link href="/about-us" className="nav-link px-3" active={router.pathname == "/about"}>
                                 About us
                             </Nav.Link>
                             <Nav.Link
@@ -62,14 +62,11 @@ const Header = () => {
                             <Nav.Link href="/blog" className="nav-link px-3" active={router.pathname == "/blog"}>
                                 Blog
                             </Nav.Link>
-                            <Nav.Link href="/moments" className="nav-link ps-3" active={router.pathname == "/moments"}>
+                            <Nav.Link href="/memorable-moments" className="nav-link ps-3" active={router.pathname == "/memorable-moments"}>
                                 Moments
                             </Nav.Link>
                         </Nav>
                     </Navbar>
-                </div>
-                <div className="px-0 mx-0" style={{ flex: "0 0 auto", width: "7%" }}>
-                    <button className="mx-0 btn btn-secondary text-white sign-in-btn">Sign in</button>
                 </div>
             </div>
 

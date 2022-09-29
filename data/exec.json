@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Nguyen Vu Cong Thang",
+        "position": "President",
+        "image": "/President.png",
+        "posImage": "/Pre.png",
+        "department": "Technology",
+        "contact": "s3914138@rmit.edu.vn"
+    },
+    {
+        "name": "Nguyen Vu Cong Thang",
+        "position": "Internal Vive President",
+        "image": "/In-VPre.png",
+        "department": "Technology",
+        "contact": "s3914138@rmit.edu.vn"
+    },
+    {
+        "name": "Nguyen Vu Cong Thang",
+        "position": "External Vive President",
+        "image": "/In-VPre.png",
+        "department": "Technology",
+        "contact": "s3914138@rmit.edu.vn"
+    },
+    {
+        "name": "Nguyen Vu Cong Thang",
+        "position": "CFO",
+        "image": "/In-VPre.png",
+        "department": "Technology",
+        "contact": "s3914138@rmit.edu.vn"
+    },
+    {
+        "name": "Nguyen Vu Cong Thang",
+        "position": "Head of Technology",
+        "image": "/In-VPre.png",
+        "department": "Technology",
+        "contact": "s3914138@rmit.edu.vn"
+    },
+    {
+        "name": "Nguyen Vu Cong Thang",
+        "position": "Head of Business",
+        "image": "/In-VPre.png",
+        "department": "Technology",
+        "contact": "s3914138@rmit.edu.vn"
+    },
+    {
+        "name": "Nguyen Vu Cong Thang",
+        "position": "Head of Marketing",
+        "image": "/In-VPre.png",
+        "department": "Technology",
+        "contact": "s3914138@rmit.edu.vn"
+    },
+    {
+        "name": "Nguyen Vu Cong Thang",
+        "position": "Head of HR",
+        "image": "/In-VPre.png",
+        "department": "Technology",
+        "contact": "s3914138@rmit.edu.vn"
+    }
+]

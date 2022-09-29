@@ -24,7 +24,7 @@ const PastGenerations = () => {
                                     if (_gen === gen) return;
                                     return (
                                         <div className="selected-gen text-secondary my-2" onClick={() => setGen(_gen)}>
-                                            <h5>Gen {_gen}</h5>
+                                            <h2>Gen {_gen}</h2>
                                         </div>
                                     );
                                 })}
@@ -33,9 +33,7 @@ const PastGenerations = () => {
                     </Accordion>
                 </div>
             </div>
-            <div className="px-5">
-                <MemberGrid members={execInfo} />
-            </div>
+            <MemberGrid members={execInfo} />
         </div>
     );
 };

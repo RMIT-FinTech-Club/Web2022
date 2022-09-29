@@ -21,29 +21,34 @@ const EventsPage = () => {
     events.forEach((e) => {
         if (moment(e.date).format("MMMM") === pastmonth) {
             past_month_events.push(e);
-            past_month_events.sort((a,b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf())
-
+            past_month_events.sort(
+                (a, b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf()
+            );
         }
         if (moment(e.date).format("MMMM") === past2month) {
             past_2month_events.push(e);
-            past_2month_events.sort((a,b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf())
-            
+            past_2month_events.sort(
+                (a, b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf()
+            );
         }
         if (moment(e.date).format("MMMM") === currentmonth) {
             current_month_events.push(e);
-            current_month_events.sort((a,b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf())
-
+            current_month_events.sort(
+                (a, b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf()
+            );
         }
         if (moment(e.date).format("MMMM") === nextmonth) {
             next_month_events.push(e);
-            next_month_events.sort((a,b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf())
+            next_month_events.sort(
+                (a, b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf()
+            );
         }
     });
 
     return (
         <>
             <Head>
-                <title>Events - RMIT Fintech Club SGS</title>
+                <title>RMIT FinTech Club SGS | Events</title>
                 <meta name="description" content="Events - RMIT Fintech Club SGS" />
                 <link rel="icon" href="/icon.png" />
             </Head>

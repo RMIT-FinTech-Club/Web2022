@@ -16,9 +16,7 @@ const CurrentMembers = () => {
                     <div className="select-department-item py-2 text-white bg-ft-gray">HR</div>
                 </div>
             </div>
-            <div className="px-5">
-                <MemberGrid members={execInfo} />
-            </div>
+            <MemberGrid members={execInfo} />
         </div>
     );
 };

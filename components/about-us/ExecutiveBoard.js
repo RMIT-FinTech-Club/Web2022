@@ -8,9 +8,7 @@ const ExecutiveBoard = () => {
     return (
         <div className="members-exec">
             <SectionTitle title={"Executive Board"} />
-            <div className="px-5">
-                <MemberGrid members={execInfo} />
-            </div>
+            <MemberGrid members={execInfo} />
         </div>
     );
 };

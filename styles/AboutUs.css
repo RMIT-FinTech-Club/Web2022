@@ -216,6 +216,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 .member-images-container {
@@ -361,12 +362,21 @@
 
   .department-title-container-mobile {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    gap: 10px;
   }
 
   .department-image-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-top: 1rem;
+  }
+
+  .department-info-text {
+    gap: 1rem;
+  }
+
+  .department-title {
+    flex: 9;
   }
 }

@@ -5,14 +5,17 @@ import momentsData from '../data/moments.json';
 const MomentItem = (props) => {
   const {title, date, image, description} = props;
   return (
-    <div className="moment-item">
-      <h3 className="moment-item-title">{title}</h3>
-      <div className="moment-item-circle"/>
-      <p className="moment-item-date">{date}</p>
-      <div className="moment-item-divider"/>
-      <img className="moment-item-img" src={image} alt={title} />
-      <p className="moment-item-description">{description}</p>
-    </div>
+    <>
+      <div className="moment-item">
+        <h3 className="moment-item-title">{title}</h3>
+        <div className="moment-item-circle"/>
+        <p className="moment-item-date">{date}</p>
+        <div className="moment-item-divider"/>
+        <img className="moment-item-img" src={image} alt={title} />
+        <p className="moment-item-description">{description}</p>
+      </div>
+      <div className="moment-item-separation" />
+    </>
   )
 }
 

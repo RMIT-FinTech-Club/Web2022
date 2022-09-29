@@ -23,7 +23,11 @@ const PastGenerations = () => {
                                     ++_gen;
                                     if (_gen === gen) return;
                                     return (
-                                        <div className="selected-gen text-secondary my-2" onClick={() => setGen(_gen)}>
+                                        <div
+                                            key={_gen}
+                                            className="selected-gen text-secondary my-2"
+                                            onClick={() => setGen(_gen)}
+                                        >
                                             <h2>Gen {_gen}</h2>
                                         </div>
                                     );

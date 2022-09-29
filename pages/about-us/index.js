@@ -12,7 +12,7 @@ export default function AboutUs() {
                 <link rel="icon" href="/icon.png" />
             </Head>
             <Header />
-            <div className="container">
+            <div className="">
                 <h1 className="text-center display-3 pt-5">About Us</h1>
                 <Departments />
                 <Members />

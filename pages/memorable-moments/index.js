@@ -24,6 +24,7 @@ const MemorableMomentsPage = ({ moments }) => {
 export async function getStaticProps() {
     const res = await fetch(API_URL + MOMENTS_ROUTE);
     const moments = await res.json();
+
     return {
         props: {
             moments,

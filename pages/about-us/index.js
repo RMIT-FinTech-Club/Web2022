@@ -2,8 +2,9 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Departments from "../../components/about-us/Departments";
 import Members from "../../components/about-us/AllMembers";
+import { API_URL, DEPARTMENTS_ROUTE } from "../../common/api/constants";
 
-export default function AboutUs() {
+export default function AboutUs({ departmentsInfo }) {
     return (
         <>
             <Head>
@@ -14,9 +15,20 @@ export default function AboutUs() {
             <Header />
             <div className="">
                 <h1 className="text-center display-3 pt-5">About Us</h1>
-                <Departments />
+                <Departments departmentsInfo={departmentsInfo} />
                 <Members />
             </div>
         </>
     );
+}
+
+export async function getStaticProps() {
+    const res = await fetch(API_URL + DEPARTMENTS_ROUTE);
+    const departmentsInfo = await res.json();
+    return {
+        props: {
+            departmentsInfo,
+        },
+        revalidate: 60,
+    };
 }

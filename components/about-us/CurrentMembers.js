@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 
 const CurrentMembers = ({ data }) => {
     const [activeDept, setActiveDept] = useState("Business");
-    const displayMembers = useMemo(() => {
+    const displayedMembers = useMemo(() => {
         return data.filter((member) => member.department === activeDept);
     }, [activeDept]);
 
@@ -48,7 +48,7 @@ const CurrentMembers = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <MemberGrid members={displayMembers} />
+            <MemberGrid members={displayedMembers} />
         </div>
     );
 };

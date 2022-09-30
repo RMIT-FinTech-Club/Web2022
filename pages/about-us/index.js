@@ -33,7 +33,7 @@ export async function getStaticProps() {
     const departmentsInfo = await deptRes.json();
     const executivesInfo = convertedExecs.filter((exec) => exec.gen === CURRENT_GEN);
     const membersInfo = await memRes.json();
-    const pastGensInfo = convertedExecs.filter((exec) => exec.gen !== CURRENT_GEN);
+    const pastGensInfo = convertedExecs.filter((exec) => exec.gen < CURRENT_GEN);
 
     return {
         props: {

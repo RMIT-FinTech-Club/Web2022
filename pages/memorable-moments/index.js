@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import MemorableMoments from "../../components/MemorableMoments";
 
 const MemorableMomentsPage = ({ moments }) => {
+    moments = moments || [];
     return (
         <>
             <Head>

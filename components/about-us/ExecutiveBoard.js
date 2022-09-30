@@ -1,6 +1,5 @@
 import React from "react";
 
-import execInfo from "../../data/exec.json";
 import MemberGrid from "./MemberGrid";
 import SectionTitle from "./SectionTitle";
 

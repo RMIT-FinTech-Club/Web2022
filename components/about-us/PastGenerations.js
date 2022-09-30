@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Accordion from "react-bootstrap/Accordion";
 
-import execInfo from "../../data/exec.json";
 import MemberGrid from "./MemberGrid";
 import SectionTitle from "./SectionTitle";
 
-const PastGenerations = () => {
-    const GEN_COUNT = 3;
-    const [gen, setGen] = useState(1);
+const PAST_GEN = [1, 2];
+
+const PastGenerations = ({ data }) => {
+    const [gen, setGen] = useState(PAST_GEN[PAST_GEN.length - 1]);
+
+    const displayMembers = useMemo(() => {
+        return data.filter((member) => member.gen === gen);
+    }, [gen]);
+
     return (
         <div className="past-gen">
             <SectionTitle title={"Past Generations"} />
@@ -19,10 +24,8 @@ const PastGenerations = () => {
                                 <h2 className="selected-gen text-secondary">Gen {gen}</h2>
                             </Accordion.Header>
                             <Accordion.Body>
-                                {[...Array(GEN_COUNT)].map((_, _gen) => {
-                                    ++_gen;
-                                    if (_gen === gen) return;
-                                    return (
+                                {PAST_GEN.map((_gen) => {
+                                    return _gen === gen ? null : (
                                         <div
                                             key={_gen}
                                             className="selected-gen text-secondary my-2"
@@ -37,7 +40,7 @@ const PastGenerations = () => {
                     </Accordion>
                 </div>
             </div>
-            <MemberGrid members={execInfo} />
+            <MemberGrid members={displayMembers} />
         </div>
     );
 };

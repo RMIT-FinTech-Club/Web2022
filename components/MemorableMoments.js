@@ -18,6 +18,7 @@ const MomentItem = (props) => {
 };
 
 const MemorableMoments = ({ moments }) => {
+    moments = moments ?? [];
     return (
         <div className="" data-aos="fade-up" id="memorable-moments">
             <div className="moments-container my-4 mx-auto">

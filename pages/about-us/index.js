@@ -2,9 +2,11 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Departments from "../../components/about-us/Departments";
 import Members from "../../components/about-us/AllMembers";
-import { API_URL, DEPARTMENTS_ROUTE } from "../../common/api/constants";
+import { API_URL, DEPARTMENTS_ROUTE, EXECUTIVES_ROUTE, MEMBERS_ROUTE } from "../../common/api/constants";
 
-export default function AboutUs({ departmentsInfo }) {
+const CURRENT_GEN = 3;
+
+export default function AboutUs({ departmentsInfo, executivesInfo, membersInfo, pastGensInfo }) {
     return (
         <>
             <Head>
@@ -16,18 +18,29 @@ export default function AboutUs({ departmentsInfo }) {
             <div className="">
                 <h1 className="text-center display-3 pt-5">About Us</h1>
                 <Departments departmentsInfo={departmentsInfo} />
-                <Members />
+                <Members execs={executivesInfo} mems={membersInfo} pastGens={pastGensInfo} />
             </div>
         </>
     );
 }
 
 export async function getStaticProps() {
-    const res = await fetch(API_URL + DEPARTMENTS_ROUTE);
-    const departmentsInfo = await res.json();
+    const deptRes = await fetch(API_URL + DEPARTMENTS_ROUTE);
+    const execRes = await fetch(API_URL + EXECUTIVES_ROUTE);
+    const memRes = await fetch(API_URL + MEMBERS_ROUTE);
+    const convertedExecs = await execRes.json();
+
+    const departmentsInfo = await deptRes.json();
+    const executivesInfo = convertedExecs.filter((exec) => exec.gen === CURRENT_GEN);
+    const membersInfo = await memRes.json();
+    const pastGensInfo = convertedExecs.filter((exec) => exec.gen !== CURRENT_GEN);
+
     return {
         props: {
             departmentsInfo,
+            executivesInfo,
+            membersInfo,
+            pastGensInfo,
         },
         revalidate: 60,
     };

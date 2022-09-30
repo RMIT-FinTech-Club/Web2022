@@ -4,11 +4,11 @@ import execInfo from "../../data/exec.json";
 import MemberGrid from "./MemberGrid";
 import SectionTitle from "./SectionTitle";
 
-const ExecutiveBoard = () => {
+const ExecutiveBoard = ({ data }) => {
     return (
         <div className="members-exec">
             <SectionTitle title={"Executive Board"} />
-            <MemberGrid members={execInfo} />
+            <MemberGrid members={data} />
         </div>
     );
 };

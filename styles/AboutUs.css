@@ -218,6 +218,7 @@
 .member-pos-image {
     position: absolute;
     width: 7vh;
+    border-radius: 50%;
     right: 0;
     bottom: 1rem;
 }
@@ -225,6 +226,7 @@
 .member-image {
     width: 20vh;
     margin-bottom: 1rem;
+    border-radius: 50%;
 }
 
 .member-name {
@@ -372,5 +374,13 @@
 
     .department-title {
         flex: 9;
+    }
+
+    .select-department {
+        width: auto;
+    }
+
+    .select-department-item {
+        padding: 0 10px;
     }
 }

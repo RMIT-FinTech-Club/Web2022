@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import MemorableMoments from "../../components/MemorableMoments";
 
 const MemorableMomentsPage = ({ moments }) => {
+    moments = moments || [];
     return (
         <>
             <Head>
@@ -21,13 +22,9 @@ const MemorableMomentsPage = ({ moments }) => {
 };
 
 export async function getStaticProps() {
-    let moments = [];
-    try {
-        const res = await fetch(API_URL + MOMENTS_ROUTE);
-        moments = await res.json();
-    } catch (e) {
-        console.log(e);
-    }
+    const res = await fetch(API_URL + MOMENTS_ROUTE);
+    const moments = await res.json();
+
     return {
         props: {
             moments,

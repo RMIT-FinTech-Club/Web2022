@@ -6,13 +6,14 @@ import moment from "moment";
 import { API_URL, EVENTS_ROUTE } from "../../common/api/constants";
 
 const EventsPage = ({ events }) => {
+    events = events || [];
     const now = moment(new Date());
     const pastEvents = {};
     const upcomingEvents = {};
 
     events.forEach((e) => {
-        if (!e.startTime) return;
-        const eventTime = moment(e.startTime);
+        if (!e.date) return;
+        const eventTime = moment(e.date);
         const eventMonthYear = eventTime.format("MMMM YYYY");
         if (eventTime.isBefore(now)) {
             pastEvents[eventMonthYear] = pastEvents[eventMonthYear] || [];
@@ -25,7 +26,7 @@ const EventsPage = ({ events }) => {
 
     // Sort upcoming events in ascending order
     for (const monthEvents of Object.values(upcomingEvents)) {
-        monthEvents.sort((a, b) => moment(a.startTime).isBefore(moment(b.startTime)));
+        monthEvents.sort((a, b) => moment(a.date).isBefore(moment(b.date)));
     }
     const upcomingMonths = Object.keys(upcomingEvents).sort(
         (a, b) => moment(a, "MMMM YYYY").valueOf() - moment(b, "MMMM YYYY").valueOf()
@@ -33,7 +34,7 @@ const EventsPage = ({ events }) => {
 
     // Sort past events in descending order
     for (const monthEvents of Object.values(pastEvents)) {
-        monthEvents.sort((b, a) => moment(a.startTime).valueOf() - moment(b.startTime).valueOf());
+        monthEvents.sort((b, a) => moment(a.date).valueOf() - moment(b.date).valueOf());
     }
     const pastMonths = Object.keys(pastEvents).sort(
         (b, a) => moment(a, "MMMM YYYY").valueOf() - moment(b, "MMMM YYYY").valueOf()
@@ -84,13 +85,9 @@ const EventsPage = ({ events }) => {
 };
 
 export async function getStaticProps() {
-    let events = [];
-    try {
-        const res = await fetch(API_URL + EVENTS_ROUTE);
-        events = await res.json();
-    } catch (e) {
-        console.log(e);
-    }
+    const res = await fetch(API_URL + EVENTS_ROUTE);
+    const events = await res.json();
+
     return {
         props: {
             events,

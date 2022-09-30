@@ -2,19 +2,17 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import moment from "moment";
 
-const SingleEventBlock = ({ startTime, endTime, name, location }) => {
-    let time = startTime ? moment(startTime).format("h:mm A") : "";
-    if (endTime) time += ` - ${moment(endTime).format("h:mm A")}`;
+const SingleEventBlock = ({ date, time, name, location }) => {
     return (
         <>
             <div className="container mt-5">
                 <Row className="justify-content-center align-items-center ft-shadow-1 single-event-block">
                     <Col md={2} className="d-none d-md-block bg-ft-darkblue h-100 events-date-radius">
                         <div className="pt-4 d-flex justify-content-center display-3 text-white events-text-date">
-                            {moment(startTime).format("DD")}
+                            {moment(date).format("DD")}
                         </div>
                         <div className="d-flex justify-content-center fs-1 text-white">
-                            {moment(startTime).format("ddd")}
+                            {moment(date).format("ddd")}
                         </div>
                     </Col>
 
@@ -42,10 +40,10 @@ const SingleEventBlock = ({ startTime, endTime, name, location }) => {
                     <div className="d-flex d-md-none">
                         <Col className="col-3 bg-ft-darkblue py-2 border-radius-1">
                             <div className="d-flex justify-content-center display-3 text-white events-text-date">
-                                {moment(startTime).format("DD")}
+                                {moment(date).format("DD")}
                             </div>
                             <div className="d-flex justify-content-center fs-1 text-white">
-                                {moment(startTime).format("ddd")}
+                                {moment(date).format("ddd")}
                             </div>
                         </Col>
 

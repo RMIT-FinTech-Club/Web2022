@@ -18,13 +18,13 @@ const MomentItem = (props) => {
 };
 
 const MemorableMoments = ({ moments }) => {
-    moments = moments ?? [];
     return (
         <div className="" data-aos="fade-up" id="memorable-moments">
             <div className="moments-container my-4 mx-auto">
                 {moments.map((moment) => {
                     return (
                         <MomentItem
+                            key={moment.id}
                             title={moment.name}
                             date={moment.date}
                             image={moment.cover}

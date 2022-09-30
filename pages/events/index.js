@@ -1,49 +1,44 @@
-import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Header from "../../components/Header";
 import { Col } from "react-bootstrap";
-import SingleEventBlock from "../../components/events/SingleEventBlock";
-import data from "../../data/events.json";
+import MonthEvents from "../../components/events/MonthEvents";
 import moment from "moment";
+import { API_URL, EVENTS_ROUTE } from "../../common/api/constants";
 
-const EventsPage = () => {
-    const events = data.events;
-    const pastmonth = moment(new Date()).subtract(1, "months").format("MMMM");
-    const past2month = moment(new Date()).subtract(2, "months").format("MMMM");
-    const currentmonth = moment(new Date()).format("MMMM");
-    const nextmonth = moment(new Date()).add(1, "months").format("MMMM");
-
-    const past_month_events = [];
-    const past_2month_events = [];
-    const current_month_events = [];
-    const next_month_events = [];
+const EventsPage = ({ events }) => {
+    events = events || [];
+    const now = moment(new Date());
+    const pastEvents = {};
+    const upcomingEvents = {};
 
     events.forEach((e) => {
-        if (moment(e.date).format("MMMM") === pastmonth) {
-            past_month_events.push(e);
-            past_month_events.sort(
-                (a, b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf()
-            );
-        }
-        if (moment(e.date).format("MMMM") === past2month) {
-            past_2month_events.push(e);
-            past_2month_events.sort(
-                (a, b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf()
-            );
-        }
-        if (moment(e.date).format("MMMM") === currentmonth) {
-            current_month_events.push(e);
-            current_month_events.sort(
-                (a, b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf()
-            );
-        }
-        if (moment(e.date).format("MMMM") === nextmonth) {
-            next_month_events.push(e);
-            next_month_events.sort(
-                (a, b) => moment(a.date, "YYYY-MM-DD").valueOf() - moment(b.date, "YYYY-MM-DD").valueOf()
-            );
+        if (!e.date) return;
+        const eventTime = moment(e.date);
+        const eventMonthYear = eventTime.format("MMMM YYYY");
+        if (eventTime.isBefore(now)) {
+            pastEvents[eventMonthYear] = pastEvents[eventMonthYear] || [];
+            pastEvents[eventMonthYear].push(e);
+        } else {
+            upcomingEvents[eventMonthYear] = upcomingEvents[eventMonthYear] || [];
+            upcomingEvents[eventMonthYear].push(e);
         }
     });
+
+    // Sort upcoming events in ascending order
+    for (const monthEvents of Object.values(upcomingEvents)) {
+        monthEvents.sort((a, b) => moment(a.date).isBefore(moment(b.date)));
+    }
+    const upcomingMonths = Object.keys(upcomingEvents).sort(
+        (a, b) => moment(a, "MMMM YYYY").valueOf() - moment(b, "MMMM YYYY").valueOf()
+    );
+
+    // Sort past events in descending order
+    for (const monthEvents of Object.values(pastEvents)) {
+        monthEvents.sort((b, a) => moment(a.date).valueOf() - moment(b.date).valueOf());
+    }
+    const pastMonths = Object.keys(pastEvents).sort(
+        (b, a) => moment(a, "MMMM YYYY").valueOf() - moment(b, "MMMM YYYY").valueOf()
+    );
 
     return (
         <>
@@ -54,14 +49,9 @@ const EventsPage = () => {
             </Head>
             <Header />
 
-            <div className="container">
+            <div className="container pb-5">
                 <div className="mt-7 display-1 text-ft-blue">Events</div>
 
-                {/**
-                 *
-                 * Upcoming events show Current month events + next month event
-                 *
-                 */}
                 <div className="mt-5 d-flex justify-content-center">
                     <Col sm={12} lg={3}>
                         <div className="display-4 text-ft-yellow">Upcoming Events</div>
@@ -72,43 +62,10 @@ const EventsPage = () => {
                     </Col>
                 </div>
 
-                <div className="mt-5" data-aos="fade-up">
-                    <h2 className="text-ft-blue font-mont text-uppercase fw-semibold">{currentmonth}</h2>
-                    {current_month_events &&
-                        current_month_events.map((e, i) => {
-                            return (
-                                <SingleEventBlock
-                                    key={i}
-                                    name={e.name}
-                                    date={e.date}
-                                    time={e.time}
-                                    location={e.location}
-                                />
-                            );
-                        })}
-                </div>
+                {upcomingMonths.map((month) => {
+                    return <MonthEvents key={month} events={upcomingEvents[month]} month={month} />;
+                })}
 
-                <div className="mt-5" data-aos="fade-up">
-                    <h2 className="text-ft-blue font-mont text-uppercase fw-semibold">{nextmonth}</h2>
-                    {next_month_events &&
-                        next_month_events.map((e, i) => {
-                            return (
-                                <SingleEventBlock
-                                    key={i}
-                                    name={e.name}
-                                    date={e.date}
-                                    time={e.time}
-                                    location={e.location}
-                                />
-                            );
-                        })}
-                </div>
-
-                {/**
-                 *
-                 * Past events show Past 1 month events + Last 2 months events
-                 *
-                 */}
                 <div className="mt-7 d-flex justify-content-center">
                     <Col lg={3}>
                         <div className="display-4 text-ft-yellow">Past Events</div>
@@ -119,40 +76,24 @@ const EventsPage = () => {
                     </Col>
                 </div>
 
-                <div className="mt-5" data-aos="fade-up">
-                    <h2 className="text-ft-blue font-mont text-uppercase fw-semibold">{pastmonth}</h2>
-                    {past_2month_events &&
-                        past_2month_events.map((e, i) => {
-                            return (
-                                <SingleEventBlock
-                                    key={i}
-                                    name={e.name}
-                                    date={e.date}
-                                    time={e.time}
-                                    location={e.location}
-                                />
-                            );
-                        })}
-                </div>
-
-                <div className="mt-5" data-aos="fade-up">
-                    <h2 className="text-ft-blue font-mont text-uppercase fw-semibold">{past2month}</h2>
-                    {past_month_events &&
-                        past_month_events.map((e, i) => {
-                            return (
-                                <SingleEventBlock
-                                    key={i}
-                                    name={e.name}
-                                    date={e.date}
-                                    time={e.time}
-                                    location={e.location}
-                                />
-                            );
-                        })}
-                </div>
+                {pastMonths.map((month) => {
+                    return <MonthEvents key={month} events={pastEvents[month]} month={month} />;
+                })}
             </div>
         </>
     );
 };
+
+export async function getStaticProps() {
+    const res = await fetch(API_URL + EVENTS_ROUTE);
+    const events = await res.json();
+
+    return {
+        props: {
+            events,
+        },
+        revalidate: 60,
+    };
+}
 
 export default EventsPage;

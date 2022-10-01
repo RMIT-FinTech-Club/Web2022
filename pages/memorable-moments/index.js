@@ -2,6 +2,7 @@ import Head from "next/head";
 import { API_URL, MOMENTS_ROUTE } from "../../common/api/constants";
 import Header from "../../components/Header";
 import MemorableMoments from "../../components/MemorableMoments";
+import { smartFetch } from "../../common/utils";
 
 const MemorableMomentsPage = ({ moments }) => {
     moments = moments || [];
@@ -22,8 +23,7 @@ const MemorableMomentsPage = ({ moments }) => {
 };
 
 export async function getStaticProps() {
-    const res = await fetch(API_URL + MOMENTS_ROUTE);
-    const moments = await res.json();
+    const moments = await smartFetch(API_URL + MOMENTS_ROUTE);
 
     return {
         props: {

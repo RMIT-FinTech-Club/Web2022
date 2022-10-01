@@ -38,22 +38,9 @@ const Departments = ({ departmentsInfo }) => {
                                     const borderClass = `department-item-border-${dept.id}`;
                                     const paddingClass =
                                         dept.id === activeDept ? "selected-department" : "unselected-department";
-                                    let backgroundClass;
-                                    switch (dept.id % 4) {
-                                        case 1:
-                                            backgroundClass = "bg-primary";
-                                            break;
-                                        case 2:
-                                            backgroundClass = "bg-secondary";
-                                            break;
-                                        case 3:
-                                            backgroundClass = "bg-ft-skyblue";
-                                            break;
-                                        case 0:
-                                            backgroundClass = "bg-ft-gray";
-                                            break;
-                                    }
-                                    const className = `department-select-item ft-shadow-1 ${borderClass} ${paddingClass} ${backgroundClass}`;
+                                    const bgClasses = ["bg-primary", "bg-secondary", "bg-ft-skyblue", "bg-ft-gray"];
+                                    const bgClass = bgClasses[dept.id - 1];
+                                    const className = `department-select-item ft-shadow-1 ${borderClass} ${paddingClass} ${bgClass}`;
                                     return (
                                         <div
                                             onClick={() => {

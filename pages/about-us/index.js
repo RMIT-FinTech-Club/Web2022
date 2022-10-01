@@ -30,7 +30,6 @@ export default function AboutUs({ departmentsInfo, executivesInfo, membersInfo, 
 }
 
 export async function getStaticProps() {
-
     const executives = await smartFetch(API_URL + EXECUTIVES_ROUTE);
     const departmentsInfo = await smartFetch(API_URL + DEPARTMENTS_ROUTE);
     const executivesInfo = executives.filter((exec) => exec.gen === CURRENT_GEN);

@@ -393,4 +393,12 @@
     .department-title-line {
         flex: 1;
     }
+
+    .select-department {
+        width: auto;
+    }
+
+    .select-department-item {
+        padding: 0 10px;
+    }
 }

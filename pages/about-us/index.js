@@ -8,6 +8,10 @@ import { smartFetch } from "../../common/utils";
 const CURRENT_GEN = 3;
 
 export default function AboutUs({ departmentsInfo, executivesInfo, membersInfo, pastGensInfo }) {
+    departmentsInfo = departmentsInfo || [];
+    executivesInfo = executivesInfo || [];
+    membersInfo = membersInfo || [];
+    pastGensInfo = pastGensInfo || [];
     return (
         <>
             <Head>

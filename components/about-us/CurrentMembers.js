@@ -18,7 +18,7 @@ const CurrentMembers = ({ data }) => {
                         onClick={() => {
                             setActiveDept("Business");
                         }}
-                        className="select-department-item py-2 text-white bg-primary"
+                        className="select-department-item py-2 text-white btn btn-primary"
                     >
                         Business
                     </div>
@@ -26,7 +26,7 @@ const CurrentMembers = ({ data }) => {
                         onClick={() => {
                             setActiveDept("Technology");
                         }}
-                        className="select-department-item py-2 text-white bg-secondary"
+                        className="select-department-item py-2 text-white btn btn-secondary"
                     >
                         Technology
                     </div>
@@ -34,7 +34,7 @@ const CurrentMembers = ({ data }) => {
                         onClick={() => {
                             setActiveDept("Marketing");
                         }}
-                        className="select-department-item py-2 text-white bg-ft-skyblue"
+                        className="select-department-item py-2 text-white btn btn-ft-skyblue"
                     >
                         Marketing
                     </div>
@@ -42,7 +42,7 @@ const CurrentMembers = ({ data }) => {
                         onClick={() => {
                             setActiveDept("HR");
                         }}
-                        className="select-department-item py-2 text-white bg-ft-gray"
+                        className="select-department-item py-2 text-white btn btn-ft-gray"
                     >
                         HR
                     </div>

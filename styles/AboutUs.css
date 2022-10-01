@@ -1,5 +1,5 @@
 #departments {
-    padding: 0 4rem;
+    padding: 0 10vw;
 }
 .department-info {
     display: flex;
@@ -159,6 +159,7 @@
 
 .members-header {
     background-color: rgba(var(--bs-secondary-rgb));
+    margin-top: 1rem;
     margin-bottom: 4rem;
     padding-left: 15%;
     position: relative;
@@ -265,6 +266,7 @@
     -ms-user-select: none;
     user-select: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .selected-department {
@@ -294,6 +296,7 @@
     -ms-user-select: none;
     user-select: none;
     margin-left: 1.5rem;
+    cursor: pointer;
 }
 
 .accordion-button {
@@ -323,6 +326,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    #departments {
+        padding: 0 10px;
+    }
     .select-department {
         grid-template-columns: 1fr 1fr;
     }
@@ -373,7 +379,19 @@
     }
 
     .department-title {
-        flex: 9;
+        flex: 5;
+    }
+
+    .select-department {
+        width: auto;
+    }
+
+    .select-department-item {
+        padding: 0 10px;
+    }
+
+    .department-title-line {
+        flex: 1;
     }
 
     .select-department {

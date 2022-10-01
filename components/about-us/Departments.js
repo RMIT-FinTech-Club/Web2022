@@ -13,7 +13,7 @@ const Departments = ({ departmentsInfo }) => {
                         <h2 className="fs-2 department-title text-secondary">Our Departments</h2>
                         <div className="department-title-line" />
                     </div>
-                    <Col lg={6} md={1} className="department-info">
+                    <Col lg={6} className="department-info">
                         <div className="department-info-container">
                             <div className="department-info-text mb-2">
                                 <div className="department-title-container">
@@ -23,13 +23,13 @@ const Departments = ({ departmentsInfo }) => {
                                 </div>
 
                                 <h2 className="display-4" style={{ marginBottom: 0 }}>
-                                    {departmentsInfo[activeDept - 1].name}
+                                    {departmentsInfo[activeDept - 1].name} Department
                                 </h2>
                                 <p className="department-info-description">
                                     {departmentsInfo[activeDept - 1].description}
                                 </p>
                             </div>
-                            <div className="join-us-button py-2 px-5 text-white bg-secondary">Join Us</div>
+                            <div className="join-us-button py-2 px-5 text-white bg-secondary mb-sm-3">Join Us</div>
                         </div>
 
                         <div>
@@ -40,8 +40,7 @@ const Departments = ({ departmentsInfo }) => {
                                         dept.id === activeDept ? "selected-department" : "unselected-department";
                                     const bgClasses = ["bg-primary", "bg-secondary", "bg-ft-skyblue", "bg-ft-gray"];
                                     const bgClass = bgClasses[dept.id - 1];
-                                    const className = `department-select-item ft-shadow-1 ${borderClass} ${paddingClass} 
-                                    ${bgClass}`;
+                                    const className = `department-select-item ft-shadow-1 ${borderClass} ${paddingClass} ${bgClass}`;
                                     return (
                                         <div
                                             onClick={() => {
@@ -59,7 +58,7 @@ const Departments = ({ departmentsInfo }) => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={6} md={1} className="department-image-container">
+                    <Col lg={6} className="department-image-container" style={{ paddingLeft: 0, paddingRight: 0 }}>
                         <img className="department-image" src={departmentsInfo[activeDept - 1].cover} />
                     </Col>
                 </Row>

@@ -4,6 +4,7 @@ import { Col } from "react-bootstrap";
 import MonthEvents from "../../components/events/MonthEvents";
 import moment from "moment";
 import { API_URL, EVENTS_ROUTE } from "../../common/api/constants";
+import { smartFetch } from "../../common/utils";
 
 const EventsPage = ({ events }) => {
     events = events || [];
@@ -85,8 +86,7 @@ const EventsPage = ({ events }) => {
 };
 
 export async function getStaticProps() {
-    const res = await fetch(API_URL + EVENTS_ROUTE);
-    const events = await res.json();
+    const events = await smartFetch(API_URL + EVENTS_ROUTE);
 
     return {
         props: {

@@ -40,3 +40,25 @@
     font-size: 1rem;
 }
 
+.club-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.club-info-text {
+    margin-bottom: 0 !important;
+}
+
+.copy-right {
+    color: #bbbbbb;
+    font-size: 0.8rem;
+}
+.media-links {
+    align-self: end;
+    display: flex;
+    gap: 2.5rem;
+}
+

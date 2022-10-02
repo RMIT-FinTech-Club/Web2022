@@ -7,10 +7,10 @@ import MediaLinks from "./footer/MediaLinks";
 const Footer = () => {
     return (
         <footer id="footer" className="footer px-5 py-5">
-            <ClubInfo />
             <InternalLinks />
+            <ClubInfo />
             <MediaLinks />
-        </footer>
+        </footer>  
     );
 };
 

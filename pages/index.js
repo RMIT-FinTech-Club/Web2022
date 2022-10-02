@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Welcome from "../components/Welcome";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Vision from "../components/Vision";
@@ -24,6 +25,7 @@ export default function Home() {
                 <UpcomingEvents />
                 <Vision />
             </div>
+            <Footer />
         </>
     );
 }

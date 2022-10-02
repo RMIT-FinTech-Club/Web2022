@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import Departments from "../../components/about-us/Departments";
 import Members from "../../components/about-us/AllMembers";
 import { API_URL, DEPARTMENTS_ROUTE, EXECUTIVES_ROUTE, MEMBERS_ROUTE } from "../../common/api/constants";
@@ -25,6 +26,7 @@ export default function AboutUs({ departmentsInfo, executivesInfo, membersInfo, 
                 <Departments departmentsInfo={departmentsInfo} />
                 <Members execs={executivesInfo} mems={membersInfo} pastGens={pastGensInfo} />
             </div>
+            <Footer />
         </>
     );
 }

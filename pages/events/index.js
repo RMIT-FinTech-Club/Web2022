@@ -14,7 +14,7 @@ const EventsPage = ({ events }) => {
 
     events.forEach((e) => {
         if (!e.date) return;
-        const eventTime = moment(e.date);
+        const eventTime = moment(e.date).endOf("day");
         const eventMonthYear = eventTime.format("MMMM YYYY");
         if (eventTime.isBefore(now)) {
             pastEvents[eventMonthYear] = pastEvents[eventMonthYear] || [];

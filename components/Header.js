@@ -62,7 +62,11 @@ const Header = () => {
                             <Nav.Link href="/blog" className="nav-link px-3" active={router.pathname == "/blog"}>
                                 Blog
                             </Nav.Link>
-                            <Nav.Link href="/memorable-moments" className="nav-link ps-3" active={router.pathname == "/memorable-moments"}>
+                            <Nav.Link
+                                href="/memorable-moments"
+                                className="nav-link ps-3"
+                                active={router.pathname == "/memorable-moments"}
+                            >
                                 Moments
                             </Nav.Link>
                         </Nav>

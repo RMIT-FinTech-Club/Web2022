@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { API_URL, MOMENTS_ROUTE } from "../../common/api/constants";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import MemorableMoments from "../../components/MemorableMoments";
 import { smartFetch } from "../../common/utils";
 
@@ -18,6 +19,7 @@ const MemorableMomentsPage = ({ moments }) => {
                 <h1 className="text-center display-3 pt-5">Memorable Moments</h1>
                 <MemorableMoments moments={moments} />
             </div>
+            <Footer />
         </>
     );
 };

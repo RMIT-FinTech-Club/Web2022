@@ -3,6 +3,7 @@ import "../styles/style.css";
 import "../styles/globals.css";
 import "../styles/Welcome.css";
 import "../styles/AboutUs.css";
+import "../styles/Footer.css";
 import "../styles/MemorableMoments.css";
 import "../styles/UpcomingEvents.css";
 import "../styles/Projects.css";

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { Col } from "react-bootstrap";
 import MonthEvents from "../../components/events/MonthEvents";
 import moment from "moment";
@@ -81,6 +82,7 @@ const EventsPage = ({ events }) => {
                     return <MonthEvents key={month} events={pastEvents[month]} month={month} />;
                 })}
             </div>
+            <Footer />
         </>
     );
 };

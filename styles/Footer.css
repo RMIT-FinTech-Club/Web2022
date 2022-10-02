@@ -2,6 +2,7 @@
     background-color: #1e2833;
     display: flex;
     width: 100vw;
+    gap: 1rem;
 }
 
 .internal-links {
@@ -13,9 +14,8 @@
 }
 
 .footer-club-logo {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
+    width: 8vw;
+    height: 8vw;
 }
 
 .footer-club-name {
@@ -35,7 +35,6 @@
 
 .i-link {
     text-align: center;
-    /* font-family: "Bebas Neue", sans-serif; */
     text-decoration: none;
     font-size: 1rem;
 }
@@ -46,6 +45,13 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
+}
+
+.club-detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .club-info-text {
@@ -59,6 +65,58 @@
 .media-links {
     align-self: end;
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+    #footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .internal-links {
+        order: 1;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .footer-club-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer-club-name {
+        font-size: 1.2rem;
+    }
+
+    .i-links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .i-link {
+        text-align: start;
+        font-size: 0.9rem;
+    }
+
+    .media-links {
+        order: 2;
+        align-self: start;
+    }
+
+    .club-info {
+        order: 3;
+        gap: 1rem;
+        text-align: start;
+    }
+
+    .club-detail {
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .copy-right {
+        font-size: 0.7rem;
+    }
+}

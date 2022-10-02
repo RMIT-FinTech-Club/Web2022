@@ -3,7 +3,7 @@ import React from "react";
 const ClubInfo = () => {
     return (
         <div className="club-info">
-            <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
+            <div className="club-detail">
                 <p className="text-white club-info-text">Email: fintechclub.sgs@rmit.edu.vn</p>
                 <p className="text-white club-info-text">
                     Address: 702 Nguyen Van Linh, Tan Hung, Dist 7, Ho Chi Minh City, Viet Nam

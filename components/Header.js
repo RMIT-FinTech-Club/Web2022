@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Header = () => {
@@ -59,15 +57,17 @@ const Header = () => {
                             <Nav.Link href="/events" className="nav-link px-3" active={router.pathname == "/events"}>
                                 Events
                             </Nav.Link>
-                            <Nav.Link href="/blog" className="nav-link px-3" active={router.pathname == "/blog"}>
-                                Blog
-                            </Nav.Link>
+
                             <Nav.Link
                                 href="/memorable-moments"
                                 className="nav-link ps-3"
                                 active={router.pathname == "/memorable-moments"}
                             >
                                 Moments
+                            </Nav.Link>
+
+                            <Nav.Link href="/more" className="nav-link px-3" active={router.pathname == "/more"}>
+                                More
                             </Nav.Link>
                         </Nav>
                     </Navbar>
@@ -136,20 +136,20 @@ const Header = () => {
                                     Events
                                 </Nav.Link>
                                 <Nav.Link
-                                    href="/blog"
+                                    href="/memorable-moments"
                                     className="nav-link fs-3"
                                     onClick={toggleOffCanvas}
-                                    active={router.pathname == "/blog"}
-                                >
-                                    Blog
-                                </Nav.Link>
-                                <Nav.Link
-                                    href="/moments"
-                                    className="nav-link fs-3"
-                                    onClick={toggleOffCanvas}
-                                    active={router.pathname == "/moments"}
+                                    active={router.pathname == "/memorable-moments"}
                                 >
                                     Moments
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="/more"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/more"}
+                                >
+                                    More
                                 </Nav.Link>
                             </Nav>
                         </Navbar>

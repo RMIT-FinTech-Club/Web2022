@@ -10,7 +10,7 @@ const Footer = () => {
             <InternalLinks />
             <ClubInfo />
             <MediaLinks />
-        </footer>  
+        </footer>
     );
 };
 

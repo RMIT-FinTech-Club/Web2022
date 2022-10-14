@@ -1,9 +1,25 @@
 import React from "react";
-import { Row, Col, Container, Button, Carousel } from "react-bootstrap";
-import Image from "next/image";
-import finTechEvents from "../data/home.json";
+import { Row, Col, Carousel } from "react-bootstrap";
 
 const UpcomingEvents = () => {
+    const events = [
+        {
+            id: 0,
+            image: "event1.png",
+        },
+        {
+            id: 1,
+            image: "event2.png",
+        },
+        {
+            id: 2,
+            image: "event3.png",
+        },
+        {
+            id: 3,
+            image: "event3.png",
+        },
+    ];
     return (
         <section data-aos="fade-up" id="upcoming">
             <div className="container d-none d-lg-block h-100">
@@ -56,7 +72,7 @@ const UpcomingEvents = () => {
                                 <Col lg={8} className="event-col">
                                     <div className="event-holder" id="first-event">
                                         <a href="/">
-                                            <img src={finTechEvents[0].image} alt="event-image" />
+                                            <img src={events[0].image} alt="event-image" />
                                         </a>
                                     </div>
                                 </Col>
@@ -65,7 +81,7 @@ const UpcomingEvents = () => {
                                         <Col lg={12} className="event-col">
                                             <div className="event-holder" id="second-event">
                                                 <a href="/">
-                                                    <img src={finTechEvents[1].image} alt="event-image" />
+                                                    <img src={events[1].image} alt="event-image" />
                                                 </a>
                                             </div>
                                         </Col>
@@ -74,14 +90,14 @@ const UpcomingEvents = () => {
                                         <Col lg={6} className="event-col">
                                             <div className="event-holder" id="second-third">
                                                 <a href="/">
-                                                    <img src={finTechEvents[2].image} alt="event-image" />
+                                                    <img src={events[2].image} alt="event-image" />
                                                 </a>
                                             </div>
                                         </Col>
                                         <Col lg={6} className="event-col">
                                             <div className="event-holder" id="second-forth">
                                                 <a href="/">
-                                                    <img src={finTechEvents[3].image} alt="event-image" />
+                                                    <img src={events[3].image} alt="event-image" />
                                                 </a>
                                             </div>
                                         </Col>
@@ -130,7 +146,7 @@ const UpcomingEvents = () => {
                     </div>
                     <div className="carousel-holder d-flex justify-content-center h-75 w-100">
                         <Carousel className="h-50 carousel-custom mt-3">
-                            {finTechEvents.map((event) => (
+                            {events.map((event) => (
                                 <Carousel.Item className="w-100 h-100" interval={1000} key={event.id}>
                                     <div className="event-holder">
                                         <a href="/" className="p-0">

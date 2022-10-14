@@ -1,7 +1,7 @@
 #footer {
     background-color: #1e2833;
     display: flex;
-    width: 100vw;
+    width: 100%;
     gap: 1rem;
 }
 

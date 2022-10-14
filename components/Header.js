@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Header = () => {
-    const navs = [
-        { id: "home", name: "Home", url: "/" },
-        { id: "about-us", name: "About us", url: "/about-us" },
-        { id: "projects", name: "Projects", url: "/projects" },
-        { id: "events", name: "Events", url: "/events" },
-        { id: "blog", name: "Blog", url: "/blog" },
-        { id: "moments", name: "Moments", url: "/moments" },
-    ];
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -34,7 +28,7 @@ const Header = () => {
                         variant="dark"
                         sticky="top"
                         bg="primary"
-                        className="justify-content-center p-0 w-100"
+                        className="justify-content-center pt-0"
                     >
                         <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0" style={{ alignItems: "center" }}>
                             <Nav.Link href="/" className="nav-link px-3" active={router.pathname == "/"}>
@@ -80,39 +74,33 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className="d-xs-block d-lg-none bg-primary sticky-top">
+            <div className="d-xs-block d-md-none bg-primary sticky-top pb-2">
                 <div className="d-flex justify-content-between align-items-center">
-                    <div className="ft-logo px-2 d-flex justify-content-center ms-3 mb-2">
-                        <img src="/club-logo.png" width={57} height={48} style={{ zIndex: 10 }} className="mt-1" />
+                    <div className="ft-logo px-2 ms-3 me-0">
+                        <img src="/club-logo.png" width={57} height={48} style={{ zIndex: 10 }} className="mt-2" />
                     </div>
                     <div className="me-1">
-                        <Button className="btn btn-white d-flex align-items-center" onClick={handleShow}>
+                        <Button className="btn btn-white" onClick={handleShow}>
                             <i className="bi bi-list mobile-nav-toggle"></i>
                         </Button>
                     </div>
                 </div>
             </div>
 
-            <div className="d-xs-block d-lg-none">
-                <Offcanvas
-                    show={show}
-                    onHide={handleClose}
-                    placement="end"
-                    className="bg-primary"
-                    style={{ width: "77%" }}
-                >
+            <div className="d-xs-block d-md-none">
+                <Offcanvas show={show} onHide={handleClose} placement="end" className="bg-primary">
                     <Offcanvas.Header>
-                        <Offcanvas.Title className="text-secondary">Menu</Offcanvas.Title>
-                        <i className="bi bi-x-circle-fill fs-1 text-white close-icon" onClick={handleClose}></i>
+                        <Offcanvas.Title></Offcanvas.Title>
+                        <i className="bi bi-x-circle fs-1 text-white" onClick={handleClose}></i>
                     </Offcanvas.Header>
-                    <Offcanvas.Body className="p-0">
+                    <Offcanvas.Body>
                         <Navbar
                             collapseOnSelect
                             expand="md"
                             variant="dark"
                             sticky="top"
                             bg="primary"
-                            className="w-100 p-0"
+                            className="justify-content-center pt-0"
                         >
                             <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0" style={{ alignItems: "center" }}>
                                 <Nav.Link

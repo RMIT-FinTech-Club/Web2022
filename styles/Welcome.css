@@ -50,30 +50,139 @@
 
 /* Responsive mobile */
 @media only screen and (max-width: 600px) {
-    .welcome-col-1-bg {
-        background: url("../public/Bear.png") no-repeat;
-        background-position-x: 16rem;
-        background-position-y: 2rem;
-        background-size: 14rem;
+    .welcome-1-bg {
+        background: url("../public/BearMobile.png") no-repeat;
+        background-position-x: 86%;
+        background-position-y: 17.5rem;
+        background-size: 6rem;
+        height: 50%;
+    }
+
+    .mobile-slogan {
+        margin-top: 10%;
+        font-size: 2em;
+        line-height: calc(3rem + 0.08vw);
+    }
+
+    .fs-input-mobile {
+        font-size: 0.75rem;
+    }
+
+    .welcome-2-bg {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../public/Image\ Background\ 1.png") no-repeat;
+        background-size: cover;
+        height: 50%;
+        display: flex;
+        font-size: 0.9rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        line-height: 2rem;
+        box-shadow: -20px -20px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .welcome-2-bg::before {
+        content: "";
+        border-right: solid 20px transparent;
+        border-left: solid 20px transparent;
+        border-top: solid 20px #C3C3C3;
+        position: absolute;
+        left: 50%;
+        top: 2.8%;
+        transform: translate(-50%, -50%);
     }
 }
 
 /* Responsive tablet */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .welcome-col-1-bg {
-        background: url("../public/Bear.png") no-repeat;
-        background-position-x: 35rem;
-        background-position-y: top;
-        background-size: 14rem;
+    .welcome-1-bg {
+        background: url("../public/BearMobile.png") no-repeat;
+        background-position-x: 86%;
+        background-position-y: 17.5rem;
+        background-size: 6rem;
+        height: 50%;
+    }
+
+    .mobile-slogan {
+        margin-top: 7%;
+        font-size: 3em;
+        line-height: calc(3rem + 0.08vw);
+    }
+
+    .fs-input-mobile {
+        font-size: 0.75rem;
+    }
+
+    .welcome-2-bg {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../public/Image\ Background\ 1.png") no-repeat;
+        background-size: cover;
+        height: 50%;
+        display: flex;
+        font-size: 0.9rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        line-height: 2rem;
+        box-shadow: -20px -20px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .welcome-2-bg::before {
+        content: "";
+        border-right: solid 20px transparent;
+        border-left: solid 20px transparent;
+        border-top: solid 20px #C3C3C3;
+        position: absolute;
+        left: 50%;
+        top: 2.8%;
+        transform: translate(-50%, -50%);
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .welcome-col-1-bg {
-        background: url("../public/Bear.png") no-repeat;
-        background-position-x: 35rem;
-        background-position-y: top;
-        background-size: 14rem;
+    .welcome-1-bg {
+        background: url("../public/BearMobile.png") no-repeat;
+        background-position-x: 86%;
+        background-position-y: 17.5rem;
+        background-size: 6rem;
+        height: 50%;
+    }
+
+    .mobile-slogan {
+        margin-top: 2%;
+        font-size: 4em;
+        line-height: calc(5rem + 0.08vw);
+    }
+
+    .fs-input-mobile {
+        font-size: 0.75rem;
+    }
+
+    .fs-custom {
+        font-size: 1rem;
+    }
+
+    .welcome-2-bg {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../public/Image\ Background\ 1.png") no-repeat;
+        background-size: cover;
+        height: 50%;
+        display: flex;
+        font-size: 0.9rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        line-height: 2rem;
+        box-shadow: -20px -20px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .welcome-2-bg::before {
+        content: "";
+        border-right: solid 20px transparent;
+        border-left: solid 20px transparent;
+        border-top: solid 20px #C3C3C3;
+        position: absolute;
+        left: 50%;
+        top: 2.8%;
+        transform: translate(-50%, -50%);
     }
 }
 

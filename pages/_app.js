@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import "../styles/Welcome.css";
 import "../styles/UpcomingEvents.css";
 import "../styles/Vision.css";
+import "../styles/Header.css";
 import "aos/dist/aos.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useEffect } from "react";

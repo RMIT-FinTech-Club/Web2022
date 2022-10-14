@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button";
+import { useRouter } from "next/router";
 
 const Header = () => {
     const navs = [
@@ -21,10 +21,13 @@ const Header = () => {
     const toggleOffCanvas = () => {
         setShow((show) => !show);
     };
+
+    const router = useRouter();
+
     return (
         <>
-            <div className="d-none d-lg-flex bg-primary justify-content-center align-items-center sticky-top">
-                <div className="px-0 mx-0 d-flex justify-content-center align-items-center w-100 container position-relative">
+            <div className="d-none d-md-flex bg-primary justify-center align-items-center">
+                <div className="px-0 mx-0" style={{ flex: "0 0 auto", width: "100%" }}>
                     <Navbar
                         collapseOnSelect
                         expand="md"
@@ -33,42 +36,47 @@ const Header = () => {
                         bg="primary"
                         className="justify-content-center p-0 w-100"
                     >
-                        <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0 w-100 justify-content-center">
-                            <div className="d-flex align-items-center w-25 flex-row-reverse">
-                                <Nav.Link href="#home" className="nav-link px-3">
-                                    Home
-                                </Nav.Link>
-                                <Nav.Link href="#about" className="nav-link px-3 ">
-                                    About us
-                                </Nav.Link>
-                                <Nav.Link href="#projects" className="nav-link px-3">
-                                    Projects
-                                </Nav.Link>
-                            </div>
-                            <div className="align-items-center pb-2">
-                                <Navbar.Brand
-                                    href="/"
-                                    className="px-2 text-dark text-decoration-none pt-0 pb-0 mx-3 d-flex justify-content-center ft-logo"
-                                >
-                                    <img src="/club-logo.png" className="mt-2" />
-                                </Navbar.Brand>
-                            </div>
-                            <div className="d-flex align-items-center w-25">
-                                <Nav.Link href="#events" className="nav-link px-3">
-                                    Events
-                                </Nav.Link>
-                                <Nav.Link href="#blog" className="nav-link px-3">
-                                    Blog
-                                </Nav.Link>
-                                <Nav.Link href="#more" className="nav-link ps-3">
-                                    More
-                                </Nav.Link>
-                            </div>
+                        <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0" style={{ alignItems: "center" }}>
+                            <Nav.Link href="/" className="nav-link px-3" active={router.pathname == "/"}>
+                                Home
+                            </Nav.Link>
+                            <Nav.Link href="/about-us" className="nav-link px-3" active={router.pathname == "/about"}>
+                                About us
+                            </Nav.Link>
+                            <Nav.Link
+                                href="/projects"
+                                className="nav-link px-3"
+                                active={router.pathname == "/projects"}
+                            >
+                                Projects
+                            </Nav.Link>
+                            <Navbar.Brand
+                                href="/"
+                                className="px-2 text-dark text-decoration-none pt-0 pb-0 mx-3 d-flex justify-content-center ft-logo"
+                            >
+                                <img
+                                    src="/club-logo.png"
+                                    width={57}
+                                    height={48}
+                                    style={{ zIndex: 10 }}
+                                    className="mt-2"
+                                />
+                            </Navbar.Brand>
+                            <Nav.Link href="/events" className="nav-link px-3" active={router.pathname == "/events"}>
+                                Events
+                            </Nav.Link>
+                            <Nav.Link href="/blog" className="nav-link px-3" active={router.pathname == "/blog"}>
+                                Blog
+                            </Nav.Link>
+                            <Nav.Link
+                                href="/memorable-moments"
+                                className="nav-link ps-3"
+                                active={router.pathname == "/memorable-moments"}
+                            >
+                                Moments
+                            </Nav.Link>
                         </Nav>
                     </Navbar>
-                    <div className="px-0 mx-0 position-absolute" style={{ zIndex: 1021, right: "0.75rem" }}>
-                        <button className="mx-0 btn btn-secondary text-white sign-in-btn">Sign in</button>
-                    </div>
                 </div>
             </div>
 
@@ -107,13 +115,54 @@ const Header = () => {
                             className="w-100 p-0"
                         >
                             <Nav className="nav py-0 col-12 col-md-auto mb-2 mb-md-0" style={{ alignItems: "center" }}>
-                                {navs.map((nav) => (
-                                    <div key={nav.id}>
-                                        <Nav.Link href={nav.url} className="nav-link" onClick={toggleOffCanvas}>
-                                            {nav.name}
-                                        </Nav.Link>
-                                    </div>
-                                ))}
+                                <Nav.Link
+                                    href="/"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/"}
+                                >
+                                    Home
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="/about"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/about"}
+                                >
+                                    About us
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="/projects"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/projects"}
+                                >
+                                    Projects
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="/events"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/events"}
+                                >
+                                    Events
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="/blog"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/blog"}
+                                >
+                                    Blog
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="/moments"
+                                    className="nav-link fs-3"
+                                    onClick={toggleOffCanvas}
+                                    active={router.pathname == "/moments"}
+                                >
+                                    Moments
+                                </Nav.Link>
                             </Nav>
                         </Navbar>
                     </Offcanvas.Body>

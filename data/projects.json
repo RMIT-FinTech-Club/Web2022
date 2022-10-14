@@ -1,0 +1,24 @@
+{
+    "magazine": {
+        "readNowUrl": "https://issuu.com/rmitfintechclub/docs/_fintech_magazine_august_edition",
+        "seeAllUrl": "https://issuu.com/rmitfintechclub"
+    },
+    "cafefin": {
+        "readNowUrl": "https://www.facebook.com/rmitfintechclub/photos/a.287261069527134/417750456478194",
+        "seeallurl": "https://www.facebook.com/media/set/?set=a.287261069527134&type=3"
+    },
+
+    "podcasts": [
+        "https://open.spotify.com/embed/episode/4g7tVZk3MJQNGZU14rMFzu?utm_source=generator",
+        "https://open.spotify.com/embed/episode/2szc79vEhkESgNAMYInAf9?utm_source=generator",
+        "https://open.spotify.com/embed/episode/2C0eiVMeNYIex5OEPQXhLm?utm_source=generator",
+        "https://open.spotify.com/embed/episode/3BKByrghO9kybXv0VmDErL?utm_source=generator",
+        "https://open.spotify.com/embed/episode/5601Q6WjtD2VWSxwy7PJT3?utm_source=generator"
+    ],
+    "rfbf": {
+        "url": "https://www.facebook.com/RMITFinTechBlockchainForum"
+    },
+    "rfbc": {
+        "url": "https://www.event.rmit.edu.vn/rfbc-2022-en"
+    }
+}

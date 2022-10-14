@@ -1,0 +1,404 @@
+#departments {
+    padding: 0 10vw;
+}
+.department-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0 !important;
+}
+
+.department-info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.department-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.department-info-description {
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.join-us-button {
+    width: fit-content;
+    font-weight: bold;
+    border-radius: 1.5rem;
+}
+
+.department-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.department-title-container-mobile {
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.department-title-line {
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    flex: 2.25;
+}
+
+.department-title {
+    flex: 5.5;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.department-select {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.department-select-item {
+    /* flex: 1; */
+    width: 100%;
+    height: 80%;
+    text-align: center;
+}
+
+.department-select-text {
+    transform: rotate(-90deg);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.department-image {
+    max-width: 100%;
+}
+
+.department-item-border-1 {
+    position: relative;
+    border-radius: 0 0 0 0;
+}
+
+.department-item-border-1::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
+    right: -12.5px;
+    height: 25px;
+    width: 12.5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 -50px 0 0 rgba(var(--bs-primary-rgb), var(--bs-bg-opacity));
+    z-index: 10;
+}
+
+.department-item-border-2 {
+    position: relative;
+    border-radius: 0 0 0 0;
+}
+
+.department-item-border-2::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
+    right: -12.5px;
+    height: 25px;
+    width: 12.5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 -50px 0 0 rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity));
+    z-index: 10;
+}
+
+.department-item-border-3 {
+    position: relative;
+    border-radius: 0 0 0 0;
+}
+
+.department-item-border-3::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
+    right: -12.5px;
+    height: 25px;
+    width: 12.5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 -50px 0 0 rgba(var(--bs-ft-skyblue-rgb), var(--bs-bg-opacity));
+    z-index: 10;
+}
+
+.department-item-border-4 {
+    position: relative;
+    border-radius: 0 0 0 0;
+}
+
+.department-item-border-4::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 50px;
+    right: -12.5px;
+    height: 25px;
+    width: 12.5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 -50px 0 0 rgba(var(--bs-ft-gray-rgb), var(--bs-bg-opacity));
+    z-index: 10;
+}
+
+.members-header {
+    background-color: rgba(var(--bs-secondary-rgb));
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding-left: 15%;
+    position: relative;
+}
+
+.section-header {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header-line {
+    height: 3px;
+    border-radius: 3px;
+    background-color: #77878b;
+    width: 10%;
+}
+
+.section-title {
+    margin: 0 1rem;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 4rem;
+    padding: 0 5rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    .members-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 0rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .members-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0rem;
+    }
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.member-images-container {
+    position: relative;
+}
+
+.member-pos-image {
+    position: absolute;
+    width: 7vh;
+    border-radius: 50%;
+    right: 0;
+    bottom: 1rem;
+}
+
+.member-image {
+    width: 20vh;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.member-name {
+    margin-bottom: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.member-department,
+.member-contact {
+    margin-bottom: 0;
+}
+
+.member-contact {
+    text-align: center;
+}
+
+.select-department-container {
+    display: flex;
+    justify-content: center;
+}
+
+.select-department {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.select-department-item {
+    /* width: 20%; */
+    text-align: center;
+    border-radius: 1.5rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selected-department {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.unselected-department {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.select-gen-container {
+    display: flex;
+    justify-content: center;
+}
+
+.select-gen {
+    width: 80%;
+    overflow: hidden;
+    border-radius: 2.5rem;
+}
+
+.selected-gen {
+    margin-bottom: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.accordion-button {
+    background-color: rgba(var(--bs-primary-rgb)) !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    /* box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 #DBB968; */
+}
+
+.accordion-body {
+    background-color: rgba(var(--bs-primary-rgb)) !important;
+    padding: 0.5rem 1rem;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23DBB968'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23DBB968'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+@media screen and (max-width: 600px) {
+    #departments {
+        padding: 0 10px;
+    }
+    .select-department {
+        grid-template-columns: 1fr 1fr;
+    }
+    .department-container {
+        flex-direction: column;
+    }
+    .department-info {
+        flex-direction: row-reverse;
+        gap: 25px;
+    }
+
+    .department-info-container {
+        justify-content: flex-start;
+    }
+
+    .department-select {
+        flex-direction: column;
+    }
+
+    .selected-department,
+    .unselected-department {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .department-select-text {
+        transform: rotate(0deg);
+    }
+
+    .department-title-container {
+        display: none;
+    }
+
+    .department-title-container-mobile {
+        display: flex;
+        margin-bottom: 1.5rem;
+        gap: 10px;
+    }
+
+    .department-image-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-top: 1rem;
+    }
+
+    .department-info-text {
+        gap: 1rem;
+    }
+
+    .department-title {
+        flex: 5;
+    }
+
+    .select-department {
+        width: auto;
+    }
+
+    .select-department-item {
+        padding: 0 10px;
+    }
+
+    .department-title-line {
+        flex: 1;
+    }
+
+    .select-department {
+        width: auto;
+    }
+
+    .select-department-item {
+        padding: 0 10px;
+    }
+}

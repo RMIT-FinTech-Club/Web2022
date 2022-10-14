@@ -6,6 +6,8 @@ import "../styles/AboutUs.css";
 import "../styles/Footer.css";
 import "../styles/MemorableMoments.css";
 import "../styles/UpcomingEvents.css";
+import "../styles/Vision.css";
+import "../styles/Header.css";
 import "../styles/Projects.css";
 import "../styles/Events.css";
 import "aos/dist/aos.css";

@@ -1,12 +1,54 @@
-html, body {
+html,
+body {
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  background: #faf9f6 url("../public/Group\ 1277.svg");
-  background-repeat: no-repeat;
-  background-position-x: -4rem;
-  background-position-y: top;
+  background: #faf9f6;
+  position: relative;
+}
+
+#__next::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: transparent url("../public/Group\ 1277.svg") no-repeat;
+  background-position: -4rem top;
   background-size: 14rem 14rem;
+}
+
+#__next::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  transform: translateY(-100%);
+  position: absolute;
+  background: transparent url("../public/Group\ 12762.svg") no-repeat;
+  background-position: right -5rem bottom -2rem;
+  background-size: 16rem 16rem;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C9D6EA;
+  border-radius: 10px;
+  transition: background-color 2s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #77878B;
+  border-radius: 10px;
 }
 
 .font-mont {
@@ -20,11 +62,18 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   background-color: #f3f3f3;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  height: 70px;
-  width: 75px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  height: calc(4rem + 0.5vw);
+  width: calc(4rem + 0.5vw);
 }
+
+.ft-logo>img {
+  width: calc(57px + 0.1vw);
+  height: calc(48px + 0.1vw);
+}
+
+
 .mobile-header {
   display: inline-flex;
 }
@@ -55,7 +104,8 @@ button.btn {
   border-radius: 50px;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
   box-shadow: none;
 }
@@ -79,9 +129,17 @@ input.newsletter::placeholder {
 
 /* Typography */
 
-.display-1, .display-2, .display-3, .display-4, .display-5 {
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
   color: #2B305E;
   line-height: 1;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 
@@ -89,9 +147,29 @@ input.newsletter::placeholder {
 
 section {
   height: 100vh;
+  min-height: 700px;
+  max-height: fit-content;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+/* Heights and Widths */
+
+.h-15 {
+  height: 15% !important;
+}
+
+.h-65 {
+  height: 65% !important;
+}
+
+.h-80 {
+  height: 80% !important;
+}
+
+.h-85 {
+  height: 85% !important;
 }
 
 /* Margins and Paddings */
@@ -163,37 +241,193 @@ section {
 
 /* Responsive mobile */
 @media only screen and (max-width: 600px) {
-  html, body {
+  /* 
+  body {
+    overflow-x: hidden;
+  } */
+
+  .container {
+    max-width: none;
+    --bs-gutter-x: 0 !important;
+    overflow: hidden;
+  }
+
+  #__next::before {
+    content: "";
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    background: transparent url("../public/Group\ 1277.svg") no-repeat;
+    background-position: left -5rem top 0.5rem;
+    background-size: 14rem 14rem;
+  }
+
+  #__next::after {
+    content: "";
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+    background: transparent url("../public/Group\ 1286.svg") no-repeat;
+    background-position: right -4.5rem top -0.5rem;
+    background-size: 14rem 14rem;
+  }
+
+  /* html,
+  body {
     background: #faf9f6 url("../public/Group\ 1277.svg");
     background-repeat: no-repeat;
     background-position-x: -2.5rem;
     background-position-y: 2.5rem;
     background-size: 8rem 8rem;
-  }
+  } */
 }
 
 /* Responsive tablet */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
+  .container {
+    max-width: none;
+    --bs-gutter-x: 0 !important;
+    overflow: hidden;
+  }
+
+  #__next::before {
+    content: "";
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    background: transparent url("../public/Group\ 1277.svg") no-repeat;
+    background-position: left -5rem top 0.5rem;
+    background-size: 14rem 14rem;
+  }
+
+  #__next::after {
+    content: "";
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+    background: transparent url("../public/Group\ 1286.svg") no-repeat;
+    background-position: right -4.5rem top -0.5rem;
+    background-size: 14rem 14rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: none;
+    --bs-gutter-x: 0 !important;
+    overflow: hidden;
+  }
+
+  #__next::before {
+    content: "";
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    background: transparent url("../public/Group\ 1277.svg") no-repeat;
+    background-position: left -5rem top 0.5rem;
+    background-size: 14rem 14rem;
+  }
+
+  #__next::after {
+    content: "";
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+    background: transparent url("../public/Group\ 1286.svg") no-repeat;
+    background-position: right -4.5rem top -0.5rem;
+    background-size: 14rem 14rem;
+  }
 }
 
 /* Responsive desktop */
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  * {
+    font-size: calc(0.85rem + 0.01vw)
+  }
 }
 
 
-@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  * {
+    font-size: calc(0.9rem + 0.02vw)
+  }
 }
 
-@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+  * {
+    font-size: calc(0.9rem + 0.02vw)
+  }
 }
 
 
-@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+@media only screen and (min-width: 1400px) and (max-width: 1800px) {
+
+  section {
+    height: 100vh;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .container {
+    max-width: 1320px;
+  }
+
+  * {
+    font-size: calc(0.95rem + 0.02vw)
+  }
+}
+
+
+@media only screen and (min-width: 1800px) and (max-width: 2549px) {
+  * {
+    font-size: calc(1.1rem + 0.02vw)
+  }
+
+  .container {
+    max-width: 1720px;
+  }
+
+  section {
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 2560px) {
+  * {
+    font-size: calc(1.3rem + 0.02vw)
+  }
+
+  .container {
+    max-width: 2480px;
+  }
+
+  section {
+    height: 1440px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .ft-logo>img {
+    width: calc(57px + 0.5vw);
+    height: calc(48px + 0.5vw);
+  }
 }

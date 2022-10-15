@@ -66,9 +66,9 @@ const Header = () => {
                             </div>
                         </Nav>
                     </Navbar>
-                    <div className="px-0 mx-0 position-absolute" style={{ zIndex: 1021, right: "0.75rem" }}>
+                    {/* <div className="px-0 mx-0 position-absolute" style={{ zIndex: 1021, right: "0.75rem" }}>
                         <button className="mx-0 btn btn-secondary text-white sign-in-btn">Sign in</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

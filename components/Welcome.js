@@ -42,7 +42,7 @@ const Welcome = () => {
                         <div className="d-flex align-items-center justify-content-center w-100 h-75">
                             <iframe
                                 className="w-75 h-50"
-                                src="https://www.youtube.com/embed/uHVWItKFs3M?controls=0&amp;autoplay=1"
+                                src="https://www.youtube.com/embed/uHVWItKFs3M?controls=0&amp;autoplay=0"
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -91,28 +91,6 @@ const Welcome = () => {
                         </p>
                     </div>
                 </div>
-                {/* <div className="d-flex">
-                    <p className="text-secondary fs-2 pe-7">RMIT VIETNAM FINTECH CLUB</p>
-                </div>
-                <div className="d-flex justify-content-center pe-2">
-                    <p className="">
-                        RMIT Vietnam FinTech Club was launched with the goal to inspire, educate and increase the
-                        exposure of people to FinTech and digital disruption via our workshops, meetups, page contents,
-                        conferences, bootcamps, and events.
-                    </p>
-                </div>
-                <div className="input-group mt-3 mb-3 pe-5">
-                    <input
-                        type="text"
-                        className="form-control newsletter py-2"
-                        placeholder="Enter email for newsletter"
-                        aria-label="Recipient's username"
-                        aria-describedby="button-addon2"
-                    />
-                    <button className="btn btn-secondary text-white" type="button" id="button-addon2">
-                        Register
-                    </button>
-                </div> */}
             </div>
         </section>
     );

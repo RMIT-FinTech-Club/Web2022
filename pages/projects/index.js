@@ -11,7 +11,7 @@ export default function Projects() {
     return (
         <>
             <Head>
-            <title>RMIT FinTech Club SGS | Our Projects</title>
+                <title>RMIT FinTech Club SGS | Our Projects</title>
                 <meta name="description" content="RMIT FinTech Club projects" />
                 <link rel="icon" href="/icon.png" />
             </Head>

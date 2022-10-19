@@ -5,7 +5,6 @@ import CurrentMembers from "./CurrentMembers";
 import PastGenerations from "./PastGenerations";
 
 const AllMembers = ({ execs, mems, pastGens }) => {
-
     return (
         <div className="" data-aos="fade-up" id="members">
             <div className="members-header py-5">

@@ -16,7 +16,7 @@ const RFBC = () => {
                 <Col lg={6} md={12} className="ps-lg-4">
                     <div className="mb-4 mt-4 mt-lg-0">
                         <p className="">
-                            This competition helps promote awareness of the Blockchain/Fintech application and enhance
+                            This competition helps promote awareness of the Blockchain/FinTech application and enhance
                             the participants' practical skills and knowledge in tackling real-world problems.
                         </p>
                     </div>

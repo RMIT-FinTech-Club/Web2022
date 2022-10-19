@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>RMIT Fintech Club</title>
+                <title>RMIT FinTech Club</title>
                 <meta property="og:title" content="RMIT FinTech Club" />
                 <meta property="og:type" content="website" />
                 <meta property="og:description" content="Website of RMIT FinTech Club" />

@@ -46,7 +46,7 @@ const EventsPage = ({ events }) => {
         <>
             <Head>
                 <title>RMIT FinTech Club SGS | Events</title>
-                <meta name="description" content="Events - RMIT Fintech Club SGS" />
+                <meta name="description" content="Events - RMIT FinTech Club SGS" />
                 <link rel="icon" href="/icon.png" />
             </Head>
             <Header />

@@ -16,7 +16,9 @@ const MemorableMomentsPage = ({ moments }) => {
             </Head>
             <Header />
             <div className="container">
-                <h1 className="text-center display-3 pt-5">Memorable Moments</h1>
+                <div className="d-flex justify-content-center">
+                    <h1 className="text-center display-3 pt-5 page-title">Memorable Moments</h1>
+                </div>
                 <MemorableMoments moments={moments} />
             </div>
             <Footer />

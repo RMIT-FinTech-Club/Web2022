@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+.page-title {
+    width: 100%;
+}
+
 .moments-container {
     display: flex;
     flex-direction: column;
@@ -60,15 +64,22 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .page-title {
+        width: 50%;
+    }
+
     .moments-container {
         width: 100%;
     }
+
     .moment-item {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .moment-item-circle, .moment-item-divider {
+
+    .moment-item-circle,
+    .moment-item-divider {
         display: none;
     }
 

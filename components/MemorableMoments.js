@@ -5,7 +5,7 @@ const MomentItem = (props) => {
     return (
         <>
             <div className="moment-item">
-                <h3 className="moment-item-title">{title}</h3>
+                <h5 className="moment-item-title">{title}</h5>
                 <div className="moment-item-circle" />
                 <p className="moment-item-date">{date ? date.substr(0, 7) : ""}</p>
                 <div className="moment-item-divider" />

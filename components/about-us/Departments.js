@@ -29,7 +29,6 @@ const Departments = ({ departmentsInfo }) => {
                                     {departmentsInfo[activeDept - 1].description}
                                 </p>
                             </div>
-                            <div className="join-us-button py-2 px-5 text-white bg-secondary mb-sm-3">Join Us</div>
                         </div>
 
                         <div>

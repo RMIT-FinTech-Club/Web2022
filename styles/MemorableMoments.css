@@ -67,6 +67,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin: 0 12px;
     }
     .moment-item-circle, .moment-item-divider {
         display: none;

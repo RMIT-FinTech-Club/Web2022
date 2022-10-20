@@ -51,8 +51,8 @@ const EventsPage = ({ events }) => {
             </Head>
             <Header />
 
-            <div className="container pb-5">
-                <div className="mt-7 display-1 text-ft-blue">Events</div>
+            <div className="page-container container pb-5">
+                <h1 className="events-page-title mt-7 display-1 text-ft-blue">Events</h1>
 
                 <div className="mt-5 d-flex justify-content-center">
                     <Col sm={12} lg={3}>

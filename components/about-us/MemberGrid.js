@@ -9,17 +9,17 @@ const Member = (props) => {
                 {posImage && <img className="member-pos-image" src={posImage} alt={position} />}
             </div>
             <h4 className="fs-3 member-name">{name}</h4>
-            <h5 className="member-position" style={{ textAlign: "center" }}>
+            <h5 className="member-position" style={{ textAlign: "center", padding: "0 10px" }}>
                 {position}
             </h5>
             <p className="member-department" style={{ textAlign: "center" }}>
                 <span style={{ fontWeight: "bold" }}>Department: </span>
                 {department}
             </p>
-            <p className="member-contact" style={{ textAlign: "center" }}>
+            {/* <p className="member-contact" style={{ textAlign: "center" }}>
                 <span style={{ fontWeight: "bold" }}>Contact: </span>
                 {contact}
-            </p>
+            </p> */}
         </div>
     );
 };

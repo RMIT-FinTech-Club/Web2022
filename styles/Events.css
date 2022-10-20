@@ -1,6 +1,6 @@
 .single-event-block {
     border-radius: 10px;
-    background: #FFFFFF;
+    background: #ffffff;
     height: 188px;
 }
 
@@ -10,19 +10,34 @@
 }
 
 .events-text-date {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
 
 .events-text-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: calc(1.325rem + 0.9vw);
 }
 
 /* Responsive mobile */
 @media only screen and (max-width: 600px) {
+    .events-page-title {
+        text-align: center;
+    }
+
     .single-event-block {
-        height: 300px;
-    }    
-  }
+        height: auto;
+        gap: 20px;
+        padding: 16px 12px;
+    }
+
+    .month-event-month {
+        text-align: center;
+    }
+
+    .events-text-title {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}

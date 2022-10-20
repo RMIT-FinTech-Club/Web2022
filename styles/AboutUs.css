@@ -225,7 +225,9 @@
 }
 
 .member-image {
-    width: 20vh;
+    width: 150px;
+    aspect-ratio: 1;
+    object-fit: cover;
     margin-bottom: 1rem;
     border-radius: 50%;
 }
@@ -233,6 +235,7 @@
 .member-name {
     margin-bottom: 0;
     font-family: "Bebas Neue", sans-serif;
+    text-align: center;
 }
 
 .member-department,
@@ -400,5 +403,9 @@
 
     .select-department-item {
         padding: 0 10px;
+    }
+
+    .member-image {
+        width: 100px
     }
 }

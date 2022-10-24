@@ -16,7 +16,7 @@ const SingleEventBlock = ({ date, time, name, location }) => {
                         </div>
                     </Col>
 
-                    <Col md={7} className="d-none d-md-block ps-5">
+                    <Col md={10} className="d-none d-md-block ps-5">
                         <div className="">
                             <h2 className="events-text-title">{name}</h2>
                         </div>
@@ -38,7 +38,10 @@ const SingleEventBlock = ({ date, time, name, location }) => {
                     {/* MOBILE */}
 
                     <div className="d-flex d-md-none">
-                        <Col className="col-3 bg-ft-darkblue py-2 border-radius-1" style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                        <Col
+                            className="col-3 bg-ft-darkblue py-2 border-radius-1"
+                            style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}
+                        >
                             <div className="d-flex justify-content-center display-3 text-white events-text-date">
                                 {moment(date).format("DD")}
                             </div>

@@ -53,7 +53,7 @@
     .welcome-1-bg {
         background: url("../public/BearMobile.png") no-repeat;
         background-position-x: 86%;
-        background-position-y: 17.5rem;
+        background-position-y: 115%;
         background-size: 6rem;
         height: 50%;
     }
@@ -88,7 +88,7 @@
         border-top: solid 20px #C3C3C3;
         position: absolute;
         left: 50%;
-        top: 2.8%;
+        top: 2.5%;
         transform: translate(-50%, -50%);
     }
 }
@@ -98,7 +98,7 @@
     .welcome-1-bg {
         background: url("../public/BearMobile.png") no-repeat;
         background-position-x: 86%;
-        background-position-y: 17.5rem;
+        background-position-y: 115%;
         background-size: 6rem;
         height: 50%;
     }
@@ -133,7 +133,7 @@
         border-top: solid 20px #C3C3C3;
         position: absolute;
         left: 50%;
-        top: 2.8%;
+        top: 2.5%;
         transform: translate(-50%, -50%);
     }
 }
@@ -142,7 +142,7 @@
     .welcome-1-bg {
         background: url("../public/BearMobile.png") no-repeat;
         background-position-x: 86%;
-        background-position-y: 17.5rem;
+        background-position-y: 115%;
         background-size: 6rem;
         height: 50%;
     }
@@ -181,7 +181,7 @@
         border-top: solid 20px #C3C3C3;
         position: absolute;
         left: 50%;
-        top: 2.8%;
+        top: 2.5%;
         transform: translate(-50%, -50%);
     }
 }

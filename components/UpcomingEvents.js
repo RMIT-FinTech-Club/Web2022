@@ -1,5 +1,6 @@
+import Link from "next/link";
 import React from "react";
-import { Row, Col, Carousel } from "react-bootstrap";
+import { Row, Col, Carousel, Image } from "react-bootstrap";
 
 const UpcomingEvents = () => {
     const events = [
@@ -71,34 +72,34 @@ const UpcomingEvents = () => {
                             <Row className="event-container">
                                 <Col lg={8} className="event-col">
                                     <div className="event-holder" id="first-event">
-                                        <a href="/">
-                                            <img src={events[0].image} alt="event-image" />
-                                        </a>
+                                        <Link href="/">
+                                            <Image src={events[0].image} alt="event-image" />
+                                        </Link>
                                     </div>
                                 </Col>
                                 <Col lg={4} className="event-col">
                                     <Row className="event-row">
                                         <Col lg={12} className="event-col">
                                             <div className="event-holder" id="second-event">
-                                                <a href="/">
-                                                    <img src={events[1].image} alt="event-image" />
-                                                </a>
+                                                <Link href="/">
+                                                    <Image src={events[1].image} alt="event-image" />
+                                                </Link>
                                             </div>
                                         </Col>
                                     </Row>
                                     <Row className="event-row">
                                         <Col lg={6} className="event-col">
                                             <div className="event-holder" id="second-third">
-                                                <a href="/">
-                                                    <img src={events[2].image} alt="event-image" />
-                                                </a>
+                                                <Link href="/">
+                                                    <Image src={events[2].image} alt="event-image" />
+                                                </Link>
                                             </div>
                                         </Col>
                                         <Col lg={6} className="event-col">
                                             <div className="event-holder" id="second-forth">
-                                                <a href="/">
-                                                    <img src={events[3].image} alt="event-image" />
-                                                </a>
+                                                <Link href="/">
+                                                    <Image src={events[3].image} alt="event-image" />
+                                                </Link>
                                             </div>
                                         </Col>
                                     </Row>
@@ -149,9 +150,9 @@ const UpcomingEvents = () => {
                             {events.map((event) => (
                                 <Carousel.Item className="w-100 h-100" interval={1000} key={event.id}>
                                     <div className="event-holder">
-                                        <a href="/" className="p-0">
-                                            <img src={event.image} alt="First slide" />
-                                        </a>
+                                        <Link href="/" className="p-0">
+                                            <Image src={event.image} alt="First slide" />
+                                        </Link>
                                     </div>
                                 </Carousel.Item>
                             ))}

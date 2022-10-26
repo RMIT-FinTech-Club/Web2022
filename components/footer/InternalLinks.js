@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import { Image } from "react-bootstrap";
 
 const INTERNAL_LINKS = [
     {
@@ -22,14 +24,14 @@ const INTERNAL_LINKS = [
 const InternalLinks = () => {
     return (
         <div className="internal-links">
-            <img src="/club-logo.png" className="footer-club-logo" />
+            <Image alt="Club logo" src="/club-logo.png" className="footer-club-logo" />
             <h2 className="text-white footer-club-name">RMIT Vietnam FinTech Club</h2>
             <div className="i-links-container">
                 {INTERNAL_LINKS.map((item) => {
                     return (
-                        <a href={item.path} className="i-link text-white nav-link">
+                        <Link key={item.path} href={item.path} className="i-link text-white nav-link">
                             {item.title}
-                        </a>
+                        </Link>
                     );
                 })}
             </div>

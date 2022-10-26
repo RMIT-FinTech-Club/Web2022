@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 
 const Departments = ({ departmentsInfo }) => {
     const [activeDept, setActiveDept] = useState(1);
@@ -58,7 +58,11 @@ const Departments = ({ departmentsInfo }) => {
                         </div>
                     </Col>
                     <Col lg={6} className="department-image-container" style={{ paddingLeft: 0, paddingRight: 0 }}>
-                        <img className="department-image" src={departmentsInfo[activeDept - 1].cover} />
+                        <Image
+                            alt={departmentsInfo[activeDept - 1].name}
+                            className="department-image"
+                            src={departmentsInfo[activeDept - 1].cover}
+                        />
                     </Col>
                 </Row>
             </div>

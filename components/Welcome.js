@@ -1,6 +1,5 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
-import Image from "next/image";
+import { Row, Col, Image } from "react-bootstrap";
 
 const Welcome = () => {
     return (
@@ -80,7 +79,14 @@ const Welcome = () => {
                 </div>
                 <div className="welcome-2-bg flex-column w-100 px-4">
                     <div className="d-flex align-items-center w-100 mb-3">
-                        <img src="/club-logo.png" width={37} height={28} style={{ zIndex: 10 }} className="me-2" />
+                        <Image
+                            alt="Club logo"
+                            src="/club-logo.png"
+                            width={37}
+                            height={28}
+                            style={{ zIndex: 10 }}
+                            className="me-2"
+                        />
                         <p className="text-secondary m-0 fs-custom">RMIT VIETNAM FINTECH CLUB</p>
                     </div>
                     <div className="">

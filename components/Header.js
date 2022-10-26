@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button";
+import { Image } from "react-bootstrap";
 
 const Header = () => {
     const navs = [
@@ -52,7 +53,7 @@ const Header = () => {
                                     href="/"
                                     className="px-2 text-dark text-decoration-none pt-0 pb-0 mx-3 d-flex justify-content-center ft-logo"
                                 >
-                                    <img src="/club-logo.png" className="mt-2" />
+                                    <Image alt="Club logo" src="/club-logo.png" className="mt-2" />
                                 </Navbar.Brand>
                             </div>
                             <div className="d-flex align-items-center w-25">
@@ -72,7 +73,14 @@ const Header = () => {
             <div className="d-xs-block d-lg-none bg-primary sticky-top">
                 <div className="d-flex justify-content-between align-items-center">
                     <div className="ft-logo px-2 d-flex justify-content-center ms-3 mb-2">
-                        <img src="/club-logo.png" width={57} height={48} style={{ zIndex: 10 }} className="mt-1" />
+                        <Image
+                            alt="Club logo"
+                            src="/club-logo.png"
+                            width={57}
+                            height={48}
+                            style={{ zIndex: 10 }}
+                            className="mt-1"
+                        />
                     </div>
                     <div className="me-1">
                         <Button className="btn btn-white d-flex align-items-center" onClick={handleShow}>

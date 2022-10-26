@@ -11,7 +11,7 @@ const PastGenerations = ({ data }) => {
 
     const displayedMembers = useMemo(() => {
         return data.filter((member) => member.gen === gen);
-    }, [gen]);
+    }, [gen, data]);
 
     return (
         <div className="past-gen">

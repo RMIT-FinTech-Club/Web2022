@@ -11,7 +11,7 @@ const Cafefin = () => {
             <h1 className="display-2 text-center text-lg-start">CafeFin</h1>
             <Row className="mt-4 h-auto">
                 <Col lg={4} md={12}>
-                    <Image className="w-100 project-img" src="/projects/cafefin-cover.png" />
+                    <Image alt="Cafefin" className="w-100 project-img" src="/projects/cafefin-cover.png" />
                 </Col>
                 <Col lg={8} md={12} className="ps-lg-4">
                     <div className="mb-4 mt-4 mt-lg-0">

@@ -7,7 +7,7 @@ const CurrentMembers = ({ data }) => {
     const [activeDept, setActiveDept] = useState("Business");
     const displayedMembers = useMemo(() => {
         return data.filter((member) => member.department === activeDept);
-    }, [activeDept]);
+    }, [activeDept, data]);
 
     return (
         <div className="members-other">

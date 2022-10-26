@@ -11,7 +11,7 @@ const RFBC = () => {
             <h1 className="display-2 text-center text-lg-start">RMIT FinTech Blockchain Competition</h1>
             <Row className="mt-4 h-auto">
                 <Col lg={6} md={12}>
-                    <Image className="w-100 project-img" src="/projects/rfbc-cover.png" />
+                    <Image alt="RFBC" className="w-100 project-img" src="/projects/rfbc-cover.png" />
                 </Col>
                 <Col lg={6} md={12} className="ps-lg-4">
                     <div className="mb-4 mt-4 mt-lg-0">

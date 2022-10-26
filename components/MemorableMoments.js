@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-bootstrap";
 
 const MomentItem = (props) => {
     const { title, date, image, description } = props;
@@ -9,7 +10,7 @@ const MomentItem = (props) => {
                 <div className="moment-item-circle" />
                 <p className="moment-item-date">{date ? date.substr(0, 7) : ""}</p>
                 <div className="moment-item-divider" />
-                <img className="moment-item-img" src={image} alt={title} />
+                <Image className="moment-item-img" src={image} alt={title} />
                 <p className="moment-item-description">{description}</p>
             </div>
             <div className="moment-item-separation" />

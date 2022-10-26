@@ -12,7 +12,7 @@ const RFBF = () => {
             <h1 className="display-2 text-center text-lg-start">RMIT FinTech Blockchain Forum</h1>
             <Row className="mt-4 h-auto">
                 <Col lg={6} md={12}>
-                    <Image className="w-100 project-img" src="/projects/rfbf-cover.png" />
+                    <Image alt="RFBF" className="w-100 project-img" src="/projects/rfbf-cover.png" />
                 </Col>
                 <Col lg={6} md={12} className="ps-lg-4">
                     <div className="mb-4 mt-4 mt-lg-0">
@@ -35,15 +35,6 @@ const RFBF = () => {
             </Row>
         </div>
     );
-
-    // return (
-    //     <div data-aos="fade-up" className="d-block container-fluid py-4 px-lg-4 mb-5">
-    //         <h1 className="display-2 text-center text-lg-start">RMIT FinTech Blockchain Competition</h1>
-    //         <div className="mt-4">
-    //             <Image className="img-fluid" src="/projects/RFBC.png" />
-    //         </div>
-    //     </div>
-    // );
 };
 
 export default RFBF;

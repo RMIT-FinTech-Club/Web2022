@@ -238,12 +238,13 @@
     text-align: center;
 }
 
-.member-department,
-.member-contact {
+.member-department {
+    padding: 0 5% 0 5%;
     margin-bottom: 0;
 }
 
 .member-contact {
+    margin-bottom: 0;
     text-align: center;
 }
 

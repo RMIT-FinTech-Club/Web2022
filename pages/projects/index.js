@@ -16,7 +16,8 @@ export default function Projects() {
                 <link rel="icon" href="/icon.png" />
             </Head>
             <Header />
-            <div className="container pt-5 pb-4">
+            <div className="container pb-4">
+                <h1 className="text-center display-3 pt-5 mb-5  ">Projects</h1>
                 <Magazine />
                 <Cafefin />
                 <Podcast />

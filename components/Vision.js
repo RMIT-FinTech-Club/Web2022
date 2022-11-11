@@ -11,14 +11,12 @@ const Vision = () => {
                             <h1 className="display-1 text-center h-15 m-0 mt-4">Vision</h1>
                             <div className="p-holder">
                                 <p className="vimi-p">
-                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
-                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-                                    going through the cites of the word in classical literature, discovered the
-                                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                                    Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-                                    BC. This book is a treatise on the theory of ethics, very popular during the
-                                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
-                                    from a line in section 1.10.32.
+                                    Our vision is to create an environment that would incubate students, turning them from
+                                    FinTech enthusiasts to future leader within the FinTech space. From expanding our club
+                                    connections with companies to building innovative FinTech products. We wish to create
+                                    many opportunities for the members to not only learn but also expand their connections
+                                    within the space. This would allow the members to build confidence they need to interact 
+                                    and pursue a career within the FinTech industry. 
                                 </p>
                             </div>
                         </div>
@@ -28,14 +26,12 @@ const Vision = () => {
                             <h1 className="display-1 text-center text-secondary h-15 m-0 mt-4">Mission</h1>
                             <div className="p-holder">
                                 <p className="vimi-p text-white">
-                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
-                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-                                    going through the cites of the word in classical literature, discovered the
-                                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                                    Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-                                    BC. This book is a treatise on the theory of ethics, very popular during the
-                                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
-                                    from a line in section 1.10.32.
+                                    Develop a community of FinTech enthusiasts beyond the RMIT community and expand the club's 
+                                    presence among university and highschool students in Vietnam. To build viable FinTech products with 
+                                    potential commercial use. To create an environment that would equip our member with the technical
+                                    skills, knowledge, network, and most importantly, the confidence to engage with the FinTech industry
+                                    beyond the scope and boundaries of our university walls. That is what we must do. Not to adhere our 
+                                    responsibilities but a promise from our genuine passion and dedication.
                                 </p>
                             </div>
                         </div>
@@ -47,13 +43,12 @@ const Vision = () => {
                     <h1 className="display-1 text-center">Vision</h1>
                     <div className="p-holder">
                         <p className="vimi-p m-0">
-                            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one
-                            of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through
-                            the cites of the word in classical literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
-                            Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
-                            theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
-                            ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                            Our vision is to create an environment that would incubate students, turning them from
+                            FinTech enthusiasts to future leader within the FinTech space. From expanding our club
+                            connections with companies to building innovative FinTech products. We wish to create
+                            many opportunities for the members to not only learn but also expand their connections
+                            within the space. This would allow the members to build confidence they need to interact 
+                            and pursue a career within the FinTech industry. 
                         </p>
                     </div>
                 </div>
@@ -61,13 +56,12 @@ const Vision = () => {
                     <h1 className="display-1 text-center text-secondary">Mission</h1>
                     <div className="p-holder">
                         <p className="vimi-p m-0 text-white">
-                            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one
-                            of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through
-                            the cites of the word in classical literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
-                            Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
-                            theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
-                            ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                            Develop a community of FinTech enthusiasts beyond the RMIT community and expand the club's 
+                            presence among university and highschool students in Vietnam. To build viable FinTech products with 
+                            potential commercial use. To create an environment that would equip our member with the technical
+                            skills, knowledge, network, and most importantly, the confidence to engage with the FinTech industry
+                            beyond the scope and boundaries of our university walls. That is what we must do. Not to adhere our 
+                            responsibilities but a promise from our genuine passion and dedication.
                         </p>
                     </div>
                 </div>

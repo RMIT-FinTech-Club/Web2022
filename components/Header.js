@@ -12,7 +12,7 @@ const Header = () => {
         { id: "projects", name: "Projects", url: "/projects" },
         { id: "events", name: "Events", url: "/events" },
         { id: "memorable-moments", name: "Moments", url: "/memorable-moments" },
-        { id: "more", name: "More", url: "/more" },
+        { id: "more", name: "More", url: "javascript:void(0)" },
     ];
     const mid = Math.ceil(navs.length / 2);
 

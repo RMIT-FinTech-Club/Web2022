@@ -17,7 +17,7 @@ export default function Projects() {
             </Head>
             <Header />
             <div className="container pb-4">
-                <h1 className="text-center display-3 pt-5 mb-5  ">Projects</h1>
+                <h1 className="text-center display-3 mt-5 mb-5">Projects</h1>
                 <Magazine />
                 <Cafefin />
                 <Podcast />

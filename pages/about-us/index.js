@@ -22,7 +22,7 @@ export default function AboutUs({ departmentsInfo, executivesInfo, membersInfo, 
             </Head>
             <Header />
             <div className="">
-                <h1 className="text-center display-3 pt-5 mb-5  ">About Us</h1>
+                <h1 className="text-center display-3 mt-5 mb-5  ">About Us</h1>
                 <Departments departmentsInfo={departmentsInfo} />
                 <Members execs={executivesInfo} mems={membersInfo} pastGens={pastGensInfo} />
             </div>

@@ -98,6 +98,22 @@
     margin: 0;
 }
 
+.carousel-custom {
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.carousel-holder {
+    position: relative;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
 /* Responsive */
 
 /* Responsive mobile */

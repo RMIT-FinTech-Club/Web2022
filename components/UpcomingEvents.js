@@ -55,7 +55,7 @@ const UpcomingEvents = () => {
                         </div>
                     </Col>
 
-                    <Col lg={8} className="upcoming-col upcoming-col-2-bg p-0 h-100">
+                    <Col lg={8} className="upcoming-col upcoming-col-2-bg p-0 h-100 p-5">
                         <div className="d-flex justify-content-end">
                             <h1 className="display-1 text-right">Upcoming Events</h1>
                         </div>
@@ -68,43 +68,18 @@ const UpcomingEvents = () => {
                             <div className="border w-50 border-ft-gray"></div>
                         </div>
 
-                        <div className="d-flex justify-content-end">
-                            <Row className="event-container">
-                                <Col lg={8} className="event-col">
-                                    <div className="event-holder" id="first-event">
-                                        <Link href="/">
-                                            <Image src={events[0].image} alt="event-image" />
-                                        </Link>
-                                    </div>
-                                </Col>
-                                <Col lg={4} className="event-col">
-                                    <Row className="event-row">
-                                        <Col lg={12} className="event-col">
-                                            <div className="event-holder" id="second-event">
-                                                <Link href="/">
-                                                    <Image src={events[1].image} alt="event-image" />
-                                                </Link>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                    <Row className="event-row">
-                                        <Col lg={6} className="event-col">
-                                            <div className="event-holder" id="second-third">
-                                                <Link href="/">
-                                                    <Image src={events[2].image} alt="event-image" />
-                                                </Link>
-                                            </div>
-                                        </Col>
-                                        <Col lg={6} className="event-col">
-                                            <div className="event-holder" id="second-forth">
-                                                <Link href="/">
-                                                    <Image src={events[3].image} alt="event-image" />
-                                                </Link>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
+                        <div className="d-flex justify-content-end h-75">
+                            <Carousel className="h-85 w-75 carousel-custom mt-3">
+                                {events.map((event) => (
+                                    <Carousel.Item className="w-100 h-100" interval={1000} key={event.id}>
+                                        <div className="event-holder">
+                                            <Link href="/" className="p-0">
+                                                <Image src={event.image} alt="First slide" />
+                                            </Link>
+                                        </div>
+                                    </Carousel.Item>
+                                ))}
+                            </Carousel>
                         </div>
                     </Col>
                 </Row>

@@ -24,7 +24,7 @@ const Welcome = () => {
                                 page contents, conferences, bootcamps, and events.
                             </p>
                         </div>
-                        <div className="input-group mt-3 mb-3 pe-5">
+                        {/* <div className="input-group mt-3 mb-3 pe-5">
                             <input
                                 type="text"
                                 className="form-control newsletter py-2"
@@ -35,7 +35,7 @@ const Welcome = () => {
                             <button className="btn btn-secondary text-white px-5" type="button" id="button-addon2">
                                 Register
                             </button>
-                        </div>
+                        </div> */}
                     </Col>
                     <Col lg={6} md={1} className="d-flex welcome-col-2 h-100 p-0">
                         <div className="d-flex align-items-center justify-content-center w-100 h-75">
@@ -60,7 +60,7 @@ const Welcome = () => {
                             <span className="text-secondary">Tech</span>nology is our weapon
                         </h1>
                     </div>
-                    <div className="input-group mt-3 mb-3 w-75">
+                    {/* <div className="input-group mt-3 mb-3 w-75">
                         <input
                             type="text"
                             className="form-control newsletter py-2 fs-input-mobile"
@@ -75,7 +75,7 @@ const Welcome = () => {
                         >
                             Register
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="welcome-2-bg flex-column w-100 px-4">
                     <div className="d-flex align-items-center w-100 mb-3">

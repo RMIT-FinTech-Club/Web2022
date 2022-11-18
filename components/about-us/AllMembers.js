@@ -13,7 +13,7 @@ const AllMembers = ({ execs, mems, pastGens }) => {
             <div className="members-body">
                 <ExecutiveBoard data={execs} />
                 <CurrentMembers data={mems} />
-                <PastGenerations data={pastGens} />
+                {/* <PastGenerations data={pastGens} /> */}
             </div>
         </div>
     );

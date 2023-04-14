@@ -13,17 +13,23 @@ const Member = (props) => {
             <h5 className="member-position" style={{ textAlign: "center", padding: "0 10px" }}>
                 {position}
             </h5>
-            <p className="member-department" style={{ textAlign: "center" }}>
+            {/* <p className="member-department" style={{ textAlign: "center" }}>
                 <span style={{ fontWeight: "bold" }}>Department: </span>
                 {department}
-            </p>
+            </p> */}
         </div>
     );
 };
 
 const MemberGrid = ({ members }) => {
+    const paddingValue = (members[0].title.substring(0,4) === 'Head') ? "6.5rem" : "14rem";
+    members.sort((mem1, mem2) => {
+        return (mem1.id - mem2.id);
+    })
+    console.log(members);
+
     return (
-        <div className="members-grid py-5">
+        <div className="members-grid py-5" style={{padding: paddingValue}}>
             {members.map((member) => {
                 const { id, avatar, posImage, name, title, department, email } = member;
                 return (
